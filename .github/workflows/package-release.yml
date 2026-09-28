@@ -22,11 +22,12 @@ jobs:
           set -euo pipefail
           VERSION="${GITHUB_REF_NAME//\//-}"
           DIST="Zoom-ZDL-FX-${VERSION}"
+          ALL_ZIP="00-Zoom-ZDL-FX-All.zip"
           mkdir -p release-assets "package/${DIST}"
           cp -a zdl "package/${DIST}/zdl"
           cp README.md README.ru.md LICENSE "package/${DIST}/"
 
-          (cd package && zip -r "../release-assets/${DIST}.zip" "${DIST}")
+          (cd package && zip -r "../release-assets/${ALL_ZIP}" "${DIST}")
 
           while IFS= read -r -d '' EFFECT_DIR; do
             EFFECT_NAME="$(basename "${EFFECT_DIR}")"
