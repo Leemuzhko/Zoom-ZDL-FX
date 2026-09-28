@@ -9,7 +9,7 @@ Amp models, cabinet effects and IR-based experiments collected in one place.</p>
   <img src="https://img.shields.io/badge/Format-ZDL-475569?style=flat-square" alt="Format: ZDL">
   <img src="https://img.shields.io/badge/Platform-Zoom_MS--series-2563eb?style=flat-square" alt="Platform: Zoom MS-series">
   <img src="https://img.shields.io/badge/Status-Experimental-92400e?style=flat-square" alt="Status: experimental">
-  <img src="https://img.shields.io/badge/License-GPL--3.0-475569?style=flat-square" alt="License: GPL-3.0">
+  <img src="https://img.shields.io/badge/License-MIT-475569?style=flat-square" alt="License: MIT">
 </p>
 
 <p align="center"><strong>English</strong> · <a href="README.ru.md">Русский</a></p>
@@ -128,6 +128,6 @@ The effects remain freely available; a donation does not buy features, priority 
 
 ## License
 
-This repository is distributed under the [GNU General Public License v3.0](LICENSE).
+This repository is distributed under the [MIT License](LICENSE).
 
 Zoom is a trademark of Zoom Corporation. This is an independent community project and is not affiliated with or endorsed by Zoom Corporation.
