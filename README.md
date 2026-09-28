@@ -30,21 +30,24 @@ Development is ongoing. The target device family is **MS-50G / MS-70G / MS-60B /
 
 ## Effects
 
-Standalone effects can be downloaded as a single `.ZDL`. Effects stored in their own directory are published as a **complete ZIP package**: keep the `.ZDL`, matching `.json`, icon/image and any other files together.
+Every effect is distributed as a **complete folder package**. Keep the `.ZDL`, matching `.json`, PNG icon/image and any accompanying files together.
 
-| Effect | Package | Download |
-| --- | --- | --- |
-| **CABSIM** | Standalone ZDL | [CABSIM.ZDL](https://raw.githubusercontent.com/Leemuzhko/Zoom-ZDL-FX/main/zdl/CABSIM.ZDL) |
-| **ENGL** | Standalone ZDL | [ENGL.ZDL](https://raw.githubusercontent.com/Leemuzhko/Zoom-ZDL-FX/main/zdl/ENGL.ZDL) |
-| **ENGL-2** | Standalone ZDL | [ENGL-2.ZDL](https://raw.githubusercontent.com/Leemuzhko/Zoom-ZDL-FX/main/zdl/ENGL-2.ZDL) |
-| **JCM800** | Standalone ZDL | [JCM800.ZDL](https://raw.githubusercontent.com/Leemuzhko/Zoom-ZDL-FX/main/zdl/JCM800.ZDL) |
-| **PLEXI** | Standalone ZDL | [PLEXI.ZDL](https://raw.githubusercontent.com/Leemuzhko/Zoom-ZDL-FX/main/zdl/PLEXI.ZDL) |
-| **IRDUAL4** | Complete effect folder | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/DUAL-IR.zip) |
-| **MS1960** | Complete effect folder | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960.zip) |
-| **MS1960 V30 T1** | Complete effect folder | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960_V30_T1.zip) |
-| **MS1960 V30 T2** | Complete effect folder | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960_V30_T2.zip) |
+| Effect | Download |
+| --- | --- |
+| **CABSIM** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/CABSIM.zip) |
+| **ENGL** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/ENGL.zip) |
+| **ENGL2** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/ENGL2.zip) |
+| **HYBRIDIR** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/HYBRIDIR.zip) |
+| **IRDUAL4** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/IRDUAL4.zip) |
+| **M1960VT1** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/M1960VT1.zip) |
+| **M1960VT2** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/M1960VT2.zip) |
+| **MS1960VS** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960VS.zip) |
+| **NAM5150** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/NAM5150.zip) |
+| **NAMPLEX** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/NAMPLEX.zip) |
+| **PLEXI** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/PLEXI.zip) |
+| **PLEXI2** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/PLEXI2.zip) |
 
-A tagged release also contains **Zoom-ZDL-FX-&lt;version&gt;.zip** with the complete collection.
+A tagged release also contains **Zoom-ZDL-FX-<version>.zip** with the complete collection.
 
 <a id="installation"></a>
 

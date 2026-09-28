@@ -30,21 +30,24 @@ MS-50G · MS-70G · MS-60B · G1on · G1Xon · B1on<br>
 
 ## Эффекты
 
-Одиночные эффекты можно скачать как один файл `.ZDL`. Если эффект хранится в отдельной папке, он публикуется как **полный ZIP-пакет**: `.ZDL`, одноимённый `.json`, изображение/иконка и остальные сопутствующие файлы должны оставаться вместе.
+Каждый эффект распространяется как **полная папка-пакет**. Файлы `.ZDL`, одноимённый `.json`, PNG-иконку/изображение и остальные сопутствующие файлы нужно держать вместе.
 
-| Эффект | Пакет | Скачать |
-| --- | --- | --- |
-| **CABSIM** | Отдельный ZDL | [CABSIM.ZDL](https://raw.githubusercontent.com/Leemuzhko/Zoom-ZDL-FX/main/zdl/CABSIM.ZDL) |
-| **ENGL** | Отдельный ZDL | [ENGL.ZDL](https://raw.githubusercontent.com/Leemuzhko/Zoom-ZDL-FX/main/zdl/ENGL.ZDL) |
-| **ENGL-2** | Отдельный ZDL | [ENGL-2.ZDL](https://raw.githubusercontent.com/Leemuzhko/Zoom-ZDL-FX/main/zdl/ENGL-2.ZDL) |
-| **JCM800** | Отдельный ZDL | [JCM800.ZDL](https://raw.githubusercontent.com/Leemuzhko/Zoom-ZDL-FX/main/zdl/JCM800.ZDL) |
-| **PLEXI** | Отдельный ZDL | [PLEXI.ZDL](https://raw.githubusercontent.com/Leemuzhko/Zoom-ZDL-FX/main/zdl/PLEXI.ZDL) |
-| **IRDUAL4** | Полная папка эффекта | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/DUAL-IR.zip) |
-| **MS1960** | Полная папка эффекта | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960.zip) |
-| **MS1960 V30 T1** | Полная папка эффекта | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960_V30_T1.zip) |
-| **MS1960 V30 T2** | Полная папка эффекта | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960_V30_T2.zip) |
+| Эффект | Скачать |
+| --- | --- |
+| **CABSIM** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/CABSIM.zip) |
+| **ENGL** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/ENGL.zip) |
+| **ENGL2** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/ENGL2.zip) |
+| **HYBRIDIR** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/HYBRIDIR.zip) |
+| **IRDUAL4** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/IRDUAL4.zip) |
+| **M1960VT1** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/M1960VT1.zip) |
+| **M1960VT2** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/M1960VT2.zip) |
+| **MS1960VS** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960VS.zip) |
+| **NAM5150** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/NAM5150.zip) |
+| **NAMPLEX** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/NAMPLEX.zip) |
+| **PLEXI** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/PLEXI.zip) |
+| **PLEXI2** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/PLEXI2.zip) |
 
-В релиз также входит общий архив **Zoom-ZDL-FX-&lt;версия&gt;.zip** со всей коллекцией.
+В релиз также входит общий архив **Zoom-ZDL-FX-<версия>.zip** со всей коллекцией.
 
 ## Установка через Zoom Effect Manager
 

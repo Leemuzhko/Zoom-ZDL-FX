@@ -12,7 +12,6 @@ permissions:
 jobs:
   package:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -21,33 +20,18 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-
           VERSION="${GITHUB_REF_NAME//\//-}"
           DIST="Zoom-ZDL-FX-${VERSION}"
-
-          mkdir -p release-assets
-          mkdir -p "package/${DIST}"
-
+          mkdir -p release-assets "package/${DIST}"
           cp -a zdl "package/${DIST}/zdl"
           cp README.md README.ru.md LICENSE "package/${DIST}/"
 
-          (
-            cd package
-            zip -r "../release-assets/${DIST}.zip" "${DIST}"
-          )
+          (cd package && zip -r "../release-assets/${DIST}.zip" "${DIST}")
 
           while IFS= read -r -d '' EFFECT_DIR; do
             EFFECT_NAME="$(basename "${EFFECT_DIR}")"
-            ASSET_NAME="$(printf '%s' "${EFFECT_NAME}" | tr ' ' '-' | tr -cd '[:alnum:]_.-')"
-
-            (
-              cd zdl
-              zip -r "../release-assets/${ASSET_NAME}.zip" "${EFFECT_NAME}"
-            )
+            (cd zdl && zip -r "../release-assets/${EFFECT_NAME}.zip" "${EFFECT_NAME}")
           done < <(find zdl -mindepth 1 -maxdepth 1 -type d -print0)
-
-          echo "Release assets:"
-          ls -lh release-assets
 
       - name: Upload workflow artifacts
         uses: actions/upload-artifact@v4
