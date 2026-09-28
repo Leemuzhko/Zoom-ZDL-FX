@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/Format-ZDL-475569?style=flat-square" alt="Format: ZDL">
   <img src="https://img.shields.io/badge/Platform-Zoom_MS--series-2563eb?style=flat-square" alt="Platform: Zoom MS-series">
   <img src="https://img.shields.io/badge/Status-Experimental-92400e?style=flat-square" alt="Status: experimental">
-  <img src="https://img.shields.io/badge/License-GPL--3.0-475569?style=flat-square" alt="License: GPL-3.0">
+  <img src="https://img.shields.io/badge/License-MIT-475569?style=flat-square" alt="License: MIT">
 </p>
 
 <p align="center"><a href="README.md">English</a> · <strong>Русский</strong></p>
@@ -126,6 +126,6 @@ Workflow также можно запустить вручную из GitHub Act
 
 ## Лицензия
 
-Репозиторий распространяется по лицензии [GNU General Public License v3.0](LICENSE).
+Репозиторий распространяется по лицензии [MIT](LICENSE).
 
 Zoom — торговая марка Zoom Corporation. Это независимый пользовательский проект, не связанный с Zoom Corporation и не одобренный ею.
