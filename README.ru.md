@@ -14,9 +14,9 @@
 
 <p align="center"><a href="README.md">English</a> · <strong>Русский</strong></p>
 
-<h3 align="center"><a href="https://github.com/Leemuzhko/Zoom-ZDL-FX/releases">Скачать все эффекты</a></h3>
+<h3 align="center"><a href="https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest">Скачать все эффекты</a></h3>
 
-<p align="center"><a href="#эффекты">Отдельные загрузки</a> · <a href="#установка">Установка</a> · <a href="https://ko-fi.com/leemuzhko">Поддержать на Ko-fi</a></p>
+<p align="center"><a href="#эффекты">Отдельные загрузки</a> · <a href="#установка-через-zoom-effect-manager">Установка</a> · <a href="https://ko-fi.com/leemuzhko">Поддержать на Ko-fi</a></p>
 
 ---
 
@@ -26,7 +26,7 @@
 
 ## Эффекты
 
-Ссылки ниже скачивают актуальные файлы напрямую из ветки `main`.
+Одиночные эффекты можно скачать как один файл `.ZDL`. Если эффект хранится в отдельной папке, он публикуется как **полный ZIP-пакет**: `.ZDL`, одноимённый `.json`, изображение/иконка и остальные сопутствующие файлы должны оставаться вместе.
 
 | Эффект | Пакет | Скачать |
 | --- | --- | --- |
@@ -35,23 +35,63 @@
 | **ENGL-2** | Отдельный ZDL | [ENGL-2.ZDL](https://raw.githubusercontent.com/Leemuzhko/Zoom-ZDL-FX/main/zdl/ENGL-2.ZDL) |
 | **JCM800** | Отдельный ZDL | [JCM800.ZDL](https://raw.githubusercontent.com/Leemuzhko/Zoom-ZDL-FX/main/zdl/JCM800.ZDL) |
 | **PLEXI** | Отдельный ZDL | [PLEXI.ZDL](https://raw.githubusercontent.com/Leemuzhko/Zoom-ZDL-FX/main/zdl/PLEXI.ZDL) |
-| **IRDUAL4** | ZDL + metadata | [Открыть папку](zdl/DUAL%20IR/) |
-| **MS1960** | ZDL + metadata | [Открыть папку](zdl/MS1960/) |
-| **MS1960 V30 T1** | ZDL + metadata | [Открыть папку](zdl/MS1960_V30_T1/) |
-| **MS1960 V30 T2** | ZDL + metadata | [Открыть папку](zdl/MS1960_V30_T2/) |
+| **IRDUAL4** | Полная папка эффекта | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/DUAL-IR.zip) |
+| **MS1960** | Полная папка эффекта | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960.zip) |
+| **MS1960 V30 T1** | Полная папка эффекта | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960_V30_T1.zip) |
+| **MS1960 V30 T2** | Полная папка эффекта | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960_V30_T2.zip) |
 
-При выпуске релиза GitHub Actions автоматически упаковывает всю папку `zdl/` в один ZIP и прикладывает его к GitHub Release.
+В релиз также входит общий архив **Zoom-ZDL-FX-&lt;версия&gt;.zip** со всей коллекцией.
 
-<a id="установка"></a>
+## Установка через Zoom Effect Manager
 
-## Установка
+### 1. Установите Zoom Effect Manager
 
-1. Скачайте нужный эффект или полный ZIP со страницы [Releases](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases).
-2. Перенесите ZDL на педаль с помощью [Zoom Effect Manager](https://zoomeffectmanager.com/en/download/).
-3. Сначала проверяйте один пользовательский эффект в простой цепочке.
-4. Если появляются треск, артефакты или нестабильность, уменьшите DSP-нагрузку и удалите последний добавленный эффект.
+Актуальную версию можно скачать здесь:
 
-Перед экспериментами с пользовательскими ZDL рекомендуется сохранить резервную копию эффектов и пресетов.
+**[Zoom Effect Manager — Скачать](https://zoomeffectmanager.com/ru/download/)**
+
+### 2. Создайте папку для пользовательских эффектов
+
+Удобный вариант структуры:
+
+```text
+Zoom Effect Manager/
+└─ Custom Effects/
+   ├─ MS1960/
+   │  ├─ MS1960.zdl
+   │  ├─ MS1960.JSON
+   │  └─ HYBRIDIR.png
+   ├─ DUAL IR/
+   │  ├─ IRDUAL4.ZDL
+   │  └─ IRDUAL4.json
+   └─ ...
+```
+
+Для эффектов, скачанных ZIP-пакетом, **распакуйте саму папку эффекта в `Custom Effects/`**. Не вынимайте из неё только ZDL: JSON, изображение/иконка и другие сопровождающие файлы должны оставаться рядом.
+
+Одиночные ZDL также можно положить прямо в `Custom Effects/` или в любую подпапку.
+
+### 3. Укажите эту папку в Zoom Effect Manager
+
+В Zoom Effect Manager:
+
+1. Откройте **Настройки**.
+2. Включите **Читать эффекты из папки** для ZDL.
+3. Добавьте/выберите созданную родительскую папку, например:
+   `Zoom Effect Manager/Custom Effects/`
+4. После добавления или изменения файлов перезапустите Zoom Effect Manager.
+
+Программа читает выбранную папку рекурсивно, поэтому каждый эффект можно спокойно держать в собственной подпапке.
+
+Подробно: **[Чтение эффектов из папки](https://zoomeffectmanager.com/ru/posts/reading-effects-from-folder/)**.
+
+### 4. Запишите эффект в педаль
+
+Подключите Zoom к компьютеру **до запуска Zoom Effect Manager**, откройте раздел эффектов, выберите нужный эффект и запишите его в устройство.
+
+См. также: **[Zoom Effect Manager — Быстрый старт](https://zoomeffectmanager.com/ru/posts/quick-start/)**.
+
+Сначала проверяйте один пользовательский эффект в простой цепочке. Перед экспериментами рекомендуется сохранить резервную копию эффектов и пресетов.
 
 ## Примечание про IR Loader
 
@@ -65,17 +105,14 @@
 
 HYBRID IR позволяет подготавливать обычные IR и гибридные FIR/IIR-модели и упаковывать их для поддерживаемых Zoom workflow.
 
-## Releases и общий ZIP
+## Releases
 
-Тег вида `v*` (например `v1.0.0`) запускает workflow релиза. Он создаёт:
+Тег вида `v*` (например `v1.0.0`) создаёт:
 
-```text
-Zoom-ZDL-FX-v1.0.0.zip
-```
+- отдельный ZIP для каждой папки эффекта верхнего уровня в `zdl/`;
+- общий архив `Zoom-ZDL-FX-v1.0.0.zip` со всей коллекцией.
 
-с коллекцией `zdl/`, README и лицензией.
-
-Workflow также можно запустить вручную из GitHub Actions — в этом случае будет собран тестовый ZIP без публикации Release.
+Workflow также можно запустить вручную из GitHub Actions — будут собраны те же ZIP-файлы как artifacts без публикации Release.
 
 ## Поддержать проект
 
