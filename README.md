@@ -15,7 +15,7 @@ Amp models, cabinet effects and IR-based experiments collected in one place.</p>
 <p align="center"><strong>English</strong> · <a href="README.ru.md">Русский</a></p>
 
 <p align="center"><strong>Target devices:</strong><br>
-MS-50G · MS-70G · MS-60B · G1on · G1Xon · B1on<br>
+MS-50G · MS-70CDR · MS-60B · G1on · G1Xon · B1on<br>
 <sub>Compatibility target for this repository. Individual effects may not be hardware-tested on every listed model.</sub></p>
 
 <h3 align="center"><a href="https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/Zoom-ZDL-FX-v0.1.0.zip">Download all effects</a></h3>
