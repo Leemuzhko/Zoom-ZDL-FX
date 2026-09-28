@@ -1,0 +1,7 @@
+{
+  "name": "GOJIRA",
+  "inDeviceFileName": "GJ_IR.ZDL",
+  "iconFile": "GJ_IR.png",
+  "descriptionEng": "HYBRID IR cabinet bank. IR slots: SM57, R121, MD421, C414. DSP cost is deliberately understated. If clicks or crackling occur, reduce FIR length or disable one channel.",
+  "descriptionRus": "Банк кабинетов HYBRID IR. Слоты IR: SM57, R121, MD421, C414. DSP-стоимость намеренно занижена. При щелчках или треске уменьшите длину FIR или отключите один канал."
+}

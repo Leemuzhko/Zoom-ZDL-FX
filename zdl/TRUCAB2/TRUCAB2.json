@@ -1,0 +1,7 @@
+{
+  "name": "TRUE CAB 2",
+  "inDeviceFileName": "TRUCAB2.ZDL",
+  "iconFile": "TRUCAB2.png",
+  "descriptionEng": "HYBRID IR cabinet bank. IR slots: AMT112, AMT212, AMT412, YE112, 1960A, 1960B, 412AV, 412AX. DSP cost is deliberately understated. If clicks or crackling occur, reduce FIR length or disable one channel.",
+  "descriptionRus": "Банк кабинетов HYBRID IR. Слоты IR: AMT112, AMT212, AMT412, YE112, 1960A, 1960B, 412AV, 412AX. DSP-стоимость намеренно занижена. При щелчках или треске уменьшите длину FIR или отключите один канал."
+}
