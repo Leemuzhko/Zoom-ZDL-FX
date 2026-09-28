@@ -18,7 +18,7 @@ Amp models, cabinet effects and IR-based experiments collected in one place.</p>
 MS-50G · MS-70G · MS-60B · G1on · G1Xon · B1on<br>
 <sub>Compatibility target for this repository. Individual effects may not be hardware-tested on every listed model.</sub></p>
 
-<h3 align="center"><a href="https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest">Download all effects</a></h3>
+<h3 align="center"><a href="https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/00-Zoom-ZDL-FX-All.zip">Download all effects</a></h3>
 
 <p align="center"><a href="#effects">Individual downloads</a> · <a href="#installation">Installation</a> · <a href="https://ko-fi.com/leemuzhko">Support on Ko-fi</a></p>
 
@@ -52,7 +52,7 @@ Every effect is distributed as a **complete folder package**. Keep the `.ZDL`, m
 | **TRUCAB** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/TRUCAB.zip) |
 | **TRUCAB2** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/TRUCAB2.zip) |
 
-A tagged release also contains **Zoom-ZDL-FX-<version>.zip** with the complete collection.
+A tagged release also contains **00-Zoom-ZDL-FX-All.zip** with the complete collection.
 
 <a id="installation"></a>
 
@@ -125,7 +125,7 @@ HYBRID IR can prepare conventional IRs and hybrid FIR/IIR models and package the
 A repository tag matching `v*` (for example `v1.0.0`) creates:
 
 - one ZIP for every top-level effect folder under `zdl/`;
-- one complete collection ZIP: `Zoom-ZDL-FX-v1.0.0.zip`.
+- one complete collection ZIP: `00-Zoom-ZDL-FX-All.zip`.
 
 The workflow can also be started manually from GitHub Actions to build the same ZIPs as workflow artifacts without publishing a Release.
 
