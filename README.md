@@ -14,7 +14,7 @@ Amp models, cabinet effects and IR-based experiments collected in one place.</p>
 
 <p align="center"><strong>English</strong> · <a href="README.ru.md">Русский</a></p>
 
-<h3 align="center"><a href="https://github.com/Leemuzhko/Zoom-ZDL-FX/releases">Download all effects</a></h3>
+<h3 align="center"><a href="https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest">Download all effects</a></h3>
 
 <p align="center"><a href="#effects">Individual downloads</a> · <a href="#installation">Installation</a> · <a href="https://ko-fi.com/leemuzhko">Support on Ko-fi</a></p>
 
@@ -26,7 +26,7 @@ Development is ongoing. Hardware behavior can depend on the exact pedal, firmwar
 
 ## Effects
 
-The links below download the current files directly from the `main` branch.
+Standalone effects can be downloaded as a single `.ZDL`. Effects stored in their own directory are published as a **complete ZIP package**: keep the `.ZDL`, matching `.json`, icon/image and any other files together.
 
 | Effect | Package | Download |
 | --- | --- | --- |
@@ -35,23 +35,65 @@ The links below download the current files directly from the `main` branch.
 | **ENGL-2** | Standalone ZDL | [ENGL-2.ZDL](https://raw.githubusercontent.com/Leemuzhko/Zoom-ZDL-FX/main/zdl/ENGL-2.ZDL) |
 | **JCM800** | Standalone ZDL | [JCM800.ZDL](https://raw.githubusercontent.com/Leemuzhko/Zoom-ZDL-FX/main/zdl/JCM800.ZDL) |
 | **PLEXI** | Standalone ZDL | [PLEXI.ZDL](https://raw.githubusercontent.com/Leemuzhko/Zoom-ZDL-FX/main/zdl/PLEXI.ZDL) |
-| **IRDUAL4** | ZDL + metadata | [Open folder](zdl/DUAL%20IR/) |
-| **MS1960** | ZDL + metadata | [Open folder](zdl/MS1960/) |
-| **MS1960 V30 T1** | ZDL + metadata | [Open folder](zdl/MS1960_V30_T1/) |
-| **MS1960 V30 T2** | ZDL + metadata | [Open folder](zdl/MS1960_V30_T2/) |
+| **IRDUAL4** | Complete effect folder | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/DUAL-IR.zip) |
+| **MS1960** | Complete effect folder | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960.zip) |
+| **MS1960 V30 T1** | Complete effect folder | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960_V30_T1.zip) |
+| **MS1960 V30 T2** | Complete effect folder | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960_V30_T2.zip) |
 
-For new tagged releases, GitHub Actions packages the full `zdl/` directory into a single ZIP and attaches it to the GitHub Release.
+A tagged release also contains **Zoom-ZDL-FX-&lt;version&gt;.zip** with the complete collection.
 
 <a id="installation"></a>
 
-## Installation
+## Installation with Zoom Effect Manager
 
-1. Download the effect you want, or download the complete ZIP from [Releases](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases).
-2. Transfer the ZDL to your pedal with [Zoom Effect Manager](https://zoomeffectmanager.com/en/download/).
-3. Test one custom effect at a time in an otherwise simple patch before building a larger chain.
-4. If you hear crackling, glitches or the pedal becomes unstable, reduce the DSP load and remove the last effect you added.
+### 1. Install Zoom Effect Manager
 
-Back up your existing effects/presets before experimenting with custom ZDL files.
+Download the current Zoom Effect Manager here:
+
+**[Zoom Effect Manager — Download](https://zoomeffectmanager.com/en/download/)**
+
+### 2. Create a folder for custom effects
+
+A convenient layout is:
+
+```text
+Zoom Effect Manager/
+└─ Custom Effects/
+   ├─ MS1960/
+   │  ├─ MS1960.zdl
+   │  ├─ MS1960.JSON
+   │  └─ HYBRIDIR.png
+   ├─ DUAL IR/
+   │  ├─ IRDUAL4.ZDL
+   │  └─ IRDUAL4.json
+   └─ ...
+```
+
+For packaged effects, **extract the ZIP itself into `Custom Effects/`**. Do not move only the ZDL out of its folder; keep the JSON, image/icon and other accompanying files beside it.
+
+Standalone ZDL files can also be placed in `Custom Effects/` or in a subfolder of your choice.
+
+### 3. Tell Zoom Effect Manager where to look
+
+In Zoom Effect Manager:
+
+1. Open **Settings**.
+2. Enable **Read effects from folder** for ZDL effects.
+3. Add/select the parent folder you created, for example:
+   `Zoom Effect Manager/Custom Effects/`
+4. Restart Zoom Effect Manager after adding or changing files.
+
+Zoom Effect Manager scans the selected directory recursively, so each effect can stay in its own subfolder.
+
+More details: **[Reading effects from a folder](https://zoomeffectmanager.com/en/posts/reading-effects-from-folder/)**.
+
+### 4. Write the effect to the pedal
+
+Connect the Zoom device **before starting Zoom Effect Manager**, open the Effects section, select the effect and write it to the pedal.
+
+See also: **[Zoom Effect Manager — Quick start](https://zoomeffectmanager.com/en/posts/quick-start/)**.
+
+Test one custom effect at a time in an otherwise simple patch before building a larger chain. Back up your existing effects/presets before experimenting.
 
 ## IR loader note
 
@@ -65,17 +107,14 @@ If you want to prepare your own cabinet responses instead of only downloading fi
 
 HYBRID IR can prepare conventional IRs and hybrid FIR/IIR models and package them for supported Zoom workflows.
 
-## Releases and the download ZIP
+## Releases
 
-A repository tag matching `v*` (for example `v1.0.0`) triggers the release workflow. It creates:
+A repository tag matching `v*` (for example `v1.0.0`) creates:
 
-```text
-Zoom-ZDL-FX-v1.0.0.zip
-```
+- one ZIP for every top-level effect folder under `zdl/`;
+- one complete collection ZIP: `Zoom-ZDL-FX-v1.0.0.zip`.
 
-containing the distributable `zdl/` collection plus the README and license.
-
-The workflow can also be started manually from GitHub Actions to build a test ZIP without publishing a release.
+The workflow can also be started manually from GitHub Actions to build the same ZIPs as workflow artifacts without publishing a Release.
 
 ## Support the project
 
