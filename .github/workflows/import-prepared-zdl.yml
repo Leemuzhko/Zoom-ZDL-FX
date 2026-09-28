@@ -31,8 +31,16 @@ jobs:
 
           SRC=/tmp/deploy/zoom_repo_deploy
 
+          # Preserve unique legacy effects that were not part of the new upload set.
+          mkdir -p /tmp/preserve
+          if [ -f zdl/JCM800.ZDL ]; then cp zdl/JCM800.ZDL /tmp/preserve/JCM800.ZDL; fi
+          if [ -d zdl/MS1960 ]; then cp -a zdl/MS1960 /tmp/preserve/MS1960; fi
+
           rm -rf zdl
           cp -a "$SRC/zdl" ./zdl
+
+          if [ -f /tmp/preserve/JCM800.ZDL ]; then cp /tmp/preserve/JCM800.ZDL zdl/JCM800.ZDL; fi
+          if [ -d /tmp/preserve/MS1960 ]; then cp -a /tmp/preserve/MS1960 zdl/MS1960; fi
           cp "$SRC/README.md" README.md
           cp "$SRC/README.ru.md" README.ru.md
           cp "$SRC/LICENSE" LICENSE
