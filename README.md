@@ -18,7 +18,7 @@ Amp models, cabinet effects and IR-based experiments collected in one place.</p>
 MS-50G · MS-70G · MS-60B · G1on · G1Xon · B1on<br>
 <sub>Compatibility target for this repository. Individual effects may not be hardware-tested on every listed model.</sub></p>
 
-<h3 align="center"><a href="https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/00-Zoom-ZDL-FX-All.zip">Download all effects</a></h3>
+<h3 align="center"><a href="https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/Zoom-ZDL-FX-v0.1.0.zip">Download all effects</a></h3>
 
 <p align="center"><a href="#effects">Individual downloads</a> · <a href="#installation">Installation</a> · <a href="https://ko-fi.com/leemuzhko">Support on Ko-fi</a></p>
 
