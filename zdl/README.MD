@@ -1,6 +1,14 @@
-Here you can find all my ZDL files
+# ZDL downloads
 
-Some notes for IR LOADER:
-TRNC - is the truncation of the IR. Lowering will free some DSP recources.
-If you hear crackling or other artifacts that mean you exceeded DSP capabilities - lower the TRNC or switch to Single.
-The DSP price is not set correctly, so this could happen. It won't tell you Dsp Full at the right time.
+This directory contains the ready-to-install effects distributed by this repository.
+
+For the effect catalog, direct download links, installation notes and release ZIPs, see the [main README](../README.md).
+
+## Notes
+
+- Test custom effects carefully and keep a backup of your existing effects/presets.
+- Hardware behavior can depend on pedal model, firmware, the rest of the chain and total DSP load.
+- IR-loader variants can become too heavy at long FIR lengths or in larger effect chains.
+- The DSP cost value in experimental/custom ZDLs is not a reliable CPU percentage.
+
+For building your own cabinet banks, see [HYBRID IR](https://github.com/Leemuzhko/HYBRID-IR).
