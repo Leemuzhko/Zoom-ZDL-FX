@@ -37,15 +37,19 @@ MS-50G · MS-70G · MS-60B · G1on · G1Xon · B1on<br>
 | **CABSIM** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/CABSIM.zip) |
 | **ENGL** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/ENGL.zip) |
 | **ENGL2** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/ENGL2.zip) |
+| **GJ_IR** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/GJ_IR.zip) |
 | **HYBRIDIR** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/HYBRIDIR.zip) |
 | **IRDUAL4** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/IRDUAL4.zip) |
 | **M1960VT1** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/M1960VT1.zip) |
 | **M1960VT2** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/M1960VT2.zip) |
+| **MS1960** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960.zip) |
 | **MS1960VS** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960VS.zip) |
 | **NAM5150** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/NAM5150.zip) |
 | **NAMPLEX** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/NAMPLEX.zip) |
 | **PLEXI** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/PLEXI.zip) |
 | **PLEXI2** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/PLEXI2.zip) |
+| **TRUCAB** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/TRUCAB.zip) |
+| **TRUCAB2** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/TRUCAB2.zip) |
 
 В релиз также входит общий архив **Zoom-ZDL-FX-<версия>.zip** со всей коллекцией.
 
@@ -65,12 +69,13 @@ MS-50G · MS-70G · MS-60B · G1on · G1Xon · B1on<br>
 Zoom Effect Manager/
 └─ Custom Effects/
    ├─ MS1960/
-   │  ├─ MS1960.zdl
-   │  ├─ MS1960.JSON
+   │  ├─ MS1960.ZDL
+   │  ├─ MS1960.json
    │  └─ HYBRIDIR.png
-   ├─ DUAL IR/
-   │  ├─ IRDUAL4.ZDL
-   │  └─ IRDUAL4.json
+   ├─ GJ_IR/
+   │  ├─ GJ_IR.ZDL
+   │  ├─ GJ_IR.json
+   │  └─ GJ_IR.png
    └─ ...
 ```
 
