@@ -14,6 +14,10 @@ Amp models, cabinet effects and IR-based experiments collected in one place.</p>
 
 <p align="center"><strong>English</strong> · <a href="README.ru.md">Русский</a></p>
 
+<p align="center"><strong>Target devices:</strong><br>
+MS-50G · MS-70G · MS-60B · G1on · G1Xon · B1on<br>
+<sub>Compatibility target for this repository. Individual effects may not be hardware-tested on every listed model.</sub></p>
+
 <h3 align="center"><a href="https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest">Download all effects</a></h3>
 
 <p align="center"><a href="#effects">Individual downloads</a> · <a href="#installation">Installation</a> · <a href="https://ko-fi.com/leemuzhko">Support on Ko-fi</a></p>
@@ -22,7 +26,7 @@ Amp models, cabinet effects and IR-based experiments collected in one place.</p>
 
 This repository is my collection of finished, working ZDL effects for the legacy/original Zoom MS-series ecosystem. It is intended for users who want ready-made effects without building them from source.
 
-Development is ongoing. Hardware behavior can depend on the exact pedal, firmware, effect chain and DSP load, so treat every custom ZDL as experimental and test it carefully.
+Development is ongoing. The target device family is **MS-50G / MS-70G / MS-60B / G1on / G1Xon / B1on**. Hardware behavior can depend on the exact pedal, firmware, effect chain and DSP load, so treat every custom ZDL as experimental and test it carefully.
 
 ## Effects
 
