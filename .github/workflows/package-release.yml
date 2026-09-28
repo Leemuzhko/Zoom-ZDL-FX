@@ -1,0 +1,44 @@
+name: Package ZDL release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build distribution ZIP
+        shell: bash
+        run: |
+          set -euo pipefail
+          VERSION="${GITHUB_REF_NAME}"
+          DIST="Zoom-ZDL-FX-${VERSION}"
+          mkdir -p "package/${DIST}"
+          cp -a zdl "package/${DIST}/zdl"
+          cp README.md README.ru.md LICENSE "package/${DIST}/"
+          cd package
+          zip -r "../${DIST}.zip" "${DIST}"
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Zoom-ZDL-FX-${{ github.ref_name }}
+          path: Zoom-ZDL-FX-${{ github.ref_name }}.zip
+          if-no-files-found: error
+
+      - name: Publish tagged release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: Zoom-ZDL-FX-${{ github.ref_name }}.zip
+          generate_release_notes: true
