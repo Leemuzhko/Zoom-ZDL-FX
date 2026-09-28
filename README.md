@@ -37,15 +37,19 @@ Every effect is distributed as a **complete folder package**. Keep the `.ZDL`, m
 | **CABSIM** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/CABSIM.zip) |
 | **ENGL** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/ENGL.zip) |
 | **ENGL2** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/ENGL2.zip) |
+| **GJ_IR** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/GJ_IR.zip) |
 | **HYBRIDIR** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/HYBRIDIR.zip) |
 | **IRDUAL4** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/IRDUAL4.zip) |
 | **M1960VT1** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/M1960VT1.zip) |
 | **M1960VT2** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/M1960VT2.zip) |
+| **MS1960** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960.zip) |
 | **MS1960VS** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960VS.zip) |
 | **NAM5150** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/NAM5150.zip) |
 | **NAMPLEX** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/NAMPLEX.zip) |
 | **PLEXI** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/PLEXI.zip) |
 | **PLEXI2** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/PLEXI2.zip) |
+| **TRUCAB** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/TRUCAB.zip) |
+| **TRUCAB2** | [Download ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/TRUCAB2.zip) |
 
 A tagged release also contains **Zoom-ZDL-FX-<version>.zip** with the complete collection.
 
@@ -67,12 +71,13 @@ A convenient layout is:
 Zoom Effect Manager/
 └─ Custom Effects/
    ├─ MS1960/
-   │  ├─ MS1960.zdl
-   │  ├─ MS1960.JSON
+   │  ├─ MS1960.ZDL
+   │  ├─ MS1960.json
    │  └─ HYBRIDIR.png
-   ├─ DUAL IR/
-   │  ├─ IRDUAL4.ZDL
-   │  └─ IRDUAL4.json
+   ├─ GJ_IR/
+   │  ├─ GJ_IR.ZDL
+   │  ├─ GJ_IR.json
+   │  └─ GJ_IR.png
    └─ ...
 ```
 
