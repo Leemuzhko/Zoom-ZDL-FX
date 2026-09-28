@@ -18,7 +18,7 @@
 MS-50G · MS-70G · MS-60B · G1on · G1Xon · B1on<br>
 <sub>Это целевая совместимость репозитория; не каждый эффект одинаково протестирован на каждой из перечисленных моделей.</sub></p>
 
-<h3 align="center"><a href="https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest">Скачать все эффекты</a></h3>
+<h3 align="center"><a href="https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/00-Zoom-ZDL-FX-All.zip">Скачать все эффекты</a></h3>
 
 <p align="center"><a href="#эффекты">Отдельные загрузки</a> · <a href="#установка-через-zoom-effect-manager">Установка</a> · <a href="https://ko-fi.com/leemuzhko">Поддержать на Ko-fi</a></p>
 
@@ -52,7 +52,7 @@ MS-50G · MS-70G · MS-60B · G1on · G1Xon · B1on<br>
 | **TRUCAB** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/TRUCAB.zip) |
 | **TRUCAB2** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/TRUCAB2.zip) |
 
-В релиз также входит общий архив **Zoom-ZDL-FX-<версия>.zip** со всей коллекцией.
+В релиз также входит общий архив **00-Zoom-ZDL-FX-All.zip** со всей коллекцией.
 
 ## Установка через Zoom Effect Manager
 
@@ -123,7 +123,7 @@ HYBRID IR позволяет подготавливать обычные IR и �
 Тег вида `v*` (например `v1.0.0`) создаёт:
 
 - отдельный ZIP для каждой папки эффекта верхнего уровня в `zdl/`;
-- общий архив `Zoom-ZDL-FX-v1.0.0.zip` со всей коллекцией.
+- общий архив `00-Zoom-ZDL-FX-All.zip` со всей коллекцией.
 
 Workflow также можно запустить вручную из GitHub Actions — будут собраны те же ZIP-файлы как artifacts без публикации Release.
 
