@@ -73,7 +73,7 @@ icons inside `zdl/` and the downloadable effect packages are unchanged.
 
 | Effect Card | Effect Description | Effect Group | ID | Version | File Name | Download |
 | --- | --- | --- | --- | --- | --- | --- |
-| <img src="assets/effect-cards/SYNX2.png" alt="SYNTHESIS 2xOSC+LFO" width="128" height="96"> | Synthesator OSC1/OSC2/LFO. | SFX (7) | 915 | 0.11 | `SYNX2.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/SYNX2.zip) |
+| <img src="assets/effect-cards/SYNX2.png" alt="SYNTHESIS 2xOSC+LFO" width="128" height="96"> | SYNTHESIS SYNX2 Synthesator OSC1/OSC2/LFO. | SFX (7) | 915 | 0.11 | `SYNX2.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/SYNX2.zip) |
 
 <!-- END GENERATED EFFECT CATALOG -->
 
