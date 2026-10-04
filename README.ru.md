@@ -20,7 +20,7 @@ MS-50G · MS-70G · MS-60B · G1on · G1Xon · B1on<br>
 
 <h3 align="center"><a href="https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest">Скачать все эффекты</a></h3>
 
-<p align="center"><a href="#эффекты">Отдельные загрузки</a> · <a href="#установка-через-zoom-effect-manager">Установка</a> · <a href="https://ko-fi.com/leemuzhko">Поддержать на Ko-fi</a></p>
+<p align="center"><a href="#эффекты">Отдельные загрузки</a> · <a href="#установка-через-zoom-effect-manager">Установка</a> · <a href="https://ko-fi.com/leemuzhko">Поддержать на Ko-fi</a> · <a href="https://www.patreon.com/Leemuzhko">Поддержать на Patreon</a></p>
 
 ---
 
@@ -32,27 +32,36 @@ MS-50G · MS-70G · MS-60B · G1on · G1Xon · B1on<br>
 
 Каждый эффект распространяется как **полная папка-пакет**. Файлы `.ZDL`, одноимённый `.json`, PNG-иконку/изображение и остальные сопутствующие файлы нужно держать вместе.
 
-| Эффект | Скачать |
-| --- | --- |
-| **CABSIM** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/CABSIM.zip) |
-| **ENGL** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/ENGL.zip) |
-| **ENGL2** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/ENGL2.zip) |
-| **GJ_IR** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/GJ_IR.zip) |
-| **HYBRIDIR** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/HYBRIDIR.zip) |
-| **IRDUAL4** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/IRDUAL4.zip) |
-| **JCM800** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/JCM800.zip) |
-| **M1960VT1** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/M1960VT1.zip) |
-| **M1960VT2** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/M1960VT2.zip) |
-| **MS1960** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960.zip) |
-| **MS1960VS** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960VS.zip) |
-| **NAM5150** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/NAM5150.zip) |
-| **NAMPLEX** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/NAMPLEX.zip) |
-| **PLEXI** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/PLEXI.zip) |
-| **PLEXI2** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/PLEXI2.zip) |
-| **TRUCAB** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/TRUCAB.zip) |
-| **TRUCAB2** | [Скачать ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/TRUCAB2.zip) |
+| Effect Card | Display Name | Effect Description | Effect Group | ID | Version | File Name | Download |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| <img src="zdl/CABSIM/CABSIM.png" alt="CABSIM" width="128" height="96"> | CABSIM | CABSIM | GuitarAmp (4) | 339 | 1.00 | `CABSIM.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/CABSIM.zip) |
+| <img src="zdl/ENGL/ENGL.png" alt="ENGL" width="128" height="96"> | ENGL | ENGL | GuitarAmp (4) | 337 | 1.00 | `ENGL.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/ENGL.zip) |
+| <img src="zdl/ENGL2/ENGL2.png" alt="ENGL2" width="128" height="96"> | ENGL2 | ENGL2 | GuitarAmp (4) | 338 | 1.00 | `ENGL2.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/ENGL2.zip) |
+| <img src="zdl/GJ_IR/GJ_IR.png" alt="GOJIRA" width="128" height="96"> | GOJIRA | Банк кабинетов HYBRID IR. Слоты IR: SM57, R121, MD421, C414. DSP-стоимость намеренно занижена. При щелчках или треске уменьшите длину FIR или отключите один канал. | Filter (2) | 567 | 1.00 | `GJ_IR.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/GJ_IR.zip) |
+| <img src="zdl/HYBRIDIR/HYBRIDIR.png" alt="HYBRIDIR" width="128" height="96"> | HYBRIDIR | HYBRIDIR | Filter (2) | 565 | 1.00 | `HYBRIDIR.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/HYBRIDIR.zip) |
+| <img src="zdl/IRDUAL4/IRDUAL4.png" alt="IRDUAL4" width="128" height="96"> | IRDUAL4 | IRDUAL4 | Filter (2) | 552 | 1.00 | `IRDUAL4.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/IRDUAL4.zip) |
+| <img src="zdl/JCM800/JCM800.png" alt="JCM800" width="128" height="96"> | JCM800 | JCM800 | GuitarAmp (4) | 351 | 1.00 | `JCM800.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/JCM800.zip) |
+| <img src="zdl/M1960VT1/M1960VT1.png" alt="M1960VT1" width="128" height="96"> | M1960VT1 | M1960VT1 | Filter (2) | 555 | 1.00 | `M1960VT1.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/M1960VT1.zip) |
+| <img src="zdl/M1960VT2/M1960VT2.png" alt="M1960VT2" width="128" height="96"> | M1960VT2 | M1960VT2 | Filter (2) | 556 | 1.00 | `M1960VT2.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/M1960VT2.zip) |
+| <img src="zdl/MS1960/HYBRIDIR.png" alt="Marshall 1960 A/AX/AV/B" width="128" height="96"> | Marshall 1960 A/AX/AV/B | Marshall 1960 A/AX/AV/B | Filter (2) | 566 | 1.00 | `MS1960.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960.zip) |
+| <img src="zdl/MS1960VS/MS1960VS.png" alt="MS1960VS" width="128" height="96"> | MS1960VS | MS1960VS | Filter (2) | 554 | 1.00 | `MS1960VS.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960VS.zip) |
+| <img src="zdl/NAM5150/NAM5150.png" alt="NAM5150" width="128" height="96"> | NAM5150 | NAM5150 | Drive (3) | 581 | 1.00 | `NAM5150.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/NAM5150.zip) |
+| <img src="zdl/NAMPLEX/NAMPLEX.png" alt="NAMPLEX" width="128" height="96"> | NAMPLEX | NAMPLEX | Drive (3) | 580 | 1.00 | `NAMPLEX.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/NAMPLEX.zip) |
+| <img src="zdl/PLEXI/PLEXI.png" alt="PLEXI" width="128" height="96"> | PLEXI | PLEXI | GuitarAmp (4) | 340 | 1.00 | `PLEXI.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/PLEXI.zip) |
+| <img src="zdl/PLEXI2/PLEXI.png" alt="Marshall PLEXI" width="128" height="96"> | Marshall PLEXI | Marshall PLEXI | GuitarAmp (4) | 370 | 1.00 | `PLEXI2.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/PLEXI2.zip) |
+| <img src="zdl/SYNX2/SYNX2.png" alt="SYNTHESIS 2xOSC+LFO" width="128" height="96"> | SYNTHESIS 2xOSC+LFO | Synthesator OSC1/OSC2/LFO. | SFX (7) | 915 | 0.11 | `SYNX2.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/SYNX2.zip) |
+| <img src="zdl/TRUCAB/TRUCAB.png" alt="TRUE CAB" width="128" height="96"> | TRUE CAB | Банк кабинетов HYBRID IR. Слоты IR: AMT112, AMT212, AMT412, YE112, 1960A, 1960B, ME212, ME412. DSP-стоимость намеренно занижена. При щелчках или треске уменьшите длину FIR или отключите один канал. | Filter (2) | 568 | 1.00 | `TRUCAB.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/TRUCAB.zip) |
+| <img src="zdl/TRUCAB2/TRUCAB2.png" alt="TRUE CAB 2" width="128" height="96"> | TRUE CAB 2 | Банк кабинетов HYBRID IR. Слоты IR: AMT112, AMT212, AMT412, YE112, 1960A, 1960B, 412AV, 412AX. DSP-стоимость намеренно занижена. При щелчках или треске уменьшите длину FIR или отключите один канал. | Filter (2) | 569 | 1.00 | `TRUCAB2.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/TRUCAB2.zip) |
 
 В релиз также входит общий архив **All-ZDL-FX-<версия>.zip** со всей коллекцией.
+
+### SYNTHESIS / SYNX2
+
+Два осциллятора, набор огибающих и tremolo/vibrato LFO только для синтезатора.
+Tap использует профиль оригинального **MS-70CDR SYSTEM 2.10**; другие
+модели/прошивки не подтверждены. Note задаётся вручную, не через MIDI Note.
+SYNX2 использует ID915, как тестовый SYN11A: ставить как замену, а не как
+независимый дополнительный эффект. Начать с тихого уровня мониторинга.
 
 ## Установка через Zoom Effect Manager
 
@@ -129,7 +138,7 @@ Workflow также можно запустить вручную из GitHub Act
 
 ## Поддержать проект
 
-Если эти эффекты вам полезны, можно [поддержать мою работу на Ko-fi](https://ko-fi.com/leemuzhko). Это помогает оплачивать разработку, тестирование и документацию.
+Если эти эффекты вам полезны, можно поддержать мою работу на [Ko-fi](https://ko-fi.com/leemuzhko) или [Patreon](https://www.patreon.com/Leemuzhko). Это помогает оплачивать разработку, тестирование и документацию.
 
 Эффекты остаются бесплатными; донат не покупает функции, приоритетную поддержку или сроки релиза.
 

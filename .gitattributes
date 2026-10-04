@@ -1,0 +1,2 @@
+# Keep the owner-supplied SYNX2 package byte-exact, including JSON line endings.
+zdl/SYNX2/* -text -filter -diff -merge
