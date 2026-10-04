@@ -25,6 +25,7 @@ jobs:
           ALL_ZIP="All-ZDL-FX-${VERSION}.zip"
           mkdir -p release-assets "package/${DIST}"
           cp -a zdl "package/${DIST}/zdl"
+          cp -a assets "package/${DIST}/assets"
           cp README.md README.ru.md LICENSE "package/${DIST}/"
 
           (cd package && zip -r "../release-assets/${ALL_ZIP}" "${DIST}")
