@@ -51,7 +51,7 @@ icons inside `zdl/` and the downloadable effect packages are unchanged.
 | <img src="assets/effect-cards/TRUCAB.png" alt="TRUE CAB" width="128" height="96"> | HYBRID IR cabinet bank. IR slots: AMT112, AMT212, AMT412, YE112, 1960A, 1960B, ME212, ME412. DSP cost is deliberately understated. If clicks or crackling occur, reduce FIR length or disable one channel. | Filter (2) | 568 | 1.00 | `TRUCAB.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/TRUCAB.zip) |
 | <img src="assets/effect-cards/TRUCAB2.png" alt="TRUE CAB 2" width="128" height="96"> | HYBRID IR cabinet bank. IR slots: AMT112, AMT212, AMT412, YE112, 1960A, 1960B, 412AV, 412AX. DSP cost is deliberately understated. If clicks or crackling occur, reduce FIR length or disable one channel. | Filter (2) | 569 | 1.00 | `TRUCAB2.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/TRUCAB2.zip) |
 
-### Drive (3)
+### Experimental NAM captures [Group 3 - Drive]
 
 | Effect Card | Effect Description | Effect Group | ID | Version | File Name | Download |
 | --- | --- | --- | --- | --- | --- | --- |
