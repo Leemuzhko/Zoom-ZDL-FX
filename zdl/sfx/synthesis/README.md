@@ -13,6 +13,11 @@ not as an independent additional effect. Start with a low monitoring level.
 
 MIDI Note control is available through the companion Windows controller below. The ZDL itself still receives Zoom parameter commands.
 
+**Auto-save warning:** When using an external MIDI controller, disable the
+pedal's **AUTO SAVE** function. This is recommended to reduce repeated flash
+memory writes during frequent parameter changes and conserve flash write cycles.
+Save any settings you want to keep manually.
+
 [Windows controller / DAW setup](controller/README.md)
 
 [All projects](https://github.com/Leemuzhko/Zoom-ZDL-FX)
