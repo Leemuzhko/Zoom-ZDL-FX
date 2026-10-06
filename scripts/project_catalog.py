@@ -94,6 +94,13 @@ def render(root):
                     Image.alpha_composite(white, rgba).convert('RGB').save(encoded, format='PNG')
                     outputs[root / project['path'] / 'cards' / (effect['name'] + '.png')] = encoded.getvalue()
             project_readme = root / project['path'] / filename
+            if project.get('controller'):
+                controller = project['controller']
+                description = f'[{cell(controller["description"][lang])}](controller/{filename})'
+                rows.append('| ' + ' | '.join([
+                    f'<img src="{controller["icon"]}" alt="SYNTHESIS SYNx2 MIDI controller" width="96" height="96">',
+                    description, 'Windows MIDI', '—', controller['version'],
+                    f'[{controller["installer"]}]({RELEASE}{controller["installer"]})']) + ' |')
             outputs[project_readme] = replace_section(project_readme.read_text(encoding='utf-8'), '\n'.join(rows)).encode('utf-8')
         path = root / filename
         outputs[path] = replace_section(path.read_text(encoding='utf-8'), '\n'.join(index)).encode('utf-8')

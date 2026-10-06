@@ -6,6 +6,8 @@ The controller turns MIDI notes and Note On/Off into Zoom Note/Gate parameter
 commands for the original MS-70CDR, SYNX2 ID915 or SYN10A ID914, slots 1–3.
 Audio comes from the pedal, not the PC. Other pedal models are unverified.
 
+![SYNTHESIS SYNx2 MIDI controller interface](images/midi-controller.png)
+
 **[Download Windows installer 0.1.2](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/SYNTHESIS-SYNx2-0.1.2-Windows-x64-Setup.exe)**
 
 - Python/Tk and MIDI runtime are included. Windows x64 installer is unsigned.

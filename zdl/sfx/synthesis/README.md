@@ -29,5 +29,6 @@ Save any settings you want to keep manually.
 | Effect Card | Effect Description | Effect Group | ID | Version | Download |
 | --- | --- | --- | --- | --- | --- |
 | <img src="cards/SYNX2.png" alt="SYNTHESIS 2xOSC+LFO" width="128" height="96"> | SYNTHESIS - Synthesator wit 2xOscillators, Envelope and LFO. | SFX (7) | 915 | 0.11 | [SYNX2.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/SYNX2.zip) |
+| <img src="controller/images/app-icon.png" alt="SYNTHESIS SYNx2 MIDI controller" width="96" height="96"> | [SYNTHESIS SYNx2 MIDI controller for Windows. MIDI Note/Gate control, PC keyboard, Latch and DAW input.](controller/README.md) | Windows MIDI | — | 0.1.2 | [SYNTHESIS-SYNx2-0.1.2-Windows-x64-Setup.exe](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/SYNTHESIS-SYNx2-0.1.2-Windows-x64-Setup.exe) |
 
 <!-- END GENERATED EFFECT CATALOG -->

@@ -6,6 +6,8 @@
 оригинального MS-70CDR, SYNX2 ID915 или SYN10A ID914, слоты 1–3. Звучит педаль,
 а не ПК. Другие модели педалей не подтверждены.
 
+![Интерфейс MIDI-контроллера SYNTHESIS SYNx2](images/midi-controller.png)
+
 **[Скачать Windows-установщик 0.1.2](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/SYNTHESIS-SYNx2-0.1.2-Windows-x64-Setup.exe)**
 
 - Python/Tk и MIDI-runtime включены. Установщик Windows x64 не подписан.

@@ -40,7 +40,16 @@
       "path": "zdl/sfx/synthesis",
       "title_ru": "SYNTHESIS SYNx2",
       "archive": true,
-      "archive_name": "All_SYNTHESIS.ZIP"
+      "archive_name": "All_SYNTHESIS.ZIP",
+      "controller": {
+        "version": "0.1.2",
+        "installer": "SYNTHESIS-SYNx2-0.1.2-Windows-x64-Setup.exe",
+        "icon": "controller/images/app-icon.png",
+        "description": {
+          "en": "SYNTHESIS SYNx2 MIDI controller for Windows. MIDI Note/Gate control, PC keyboard, Latch and DAW input.",
+          "ru": "MIDI-контроллер SYNTHESIS SYNx2 для Windows: управление Note/Gate, PC-клавиатура, Latch и MIDI-вход из DAW."
+        }
+      }
     }
   ],
   "effects": [

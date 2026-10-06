@@ -29,5 +29,6 @@ SYNX2 использует ID915, как тестовый SYN11A: ставить
 | Карточка эффекта | Описание эффекта | Группа | ID | Версия | Скачать |
 | --- | --- | --- | --- | --- | --- |
 | <img src="cards/SYNX2.png" alt="SYNTHESIS 2xOSC+LFO" width="128" height="96"> | SYNTHESIS — синтезатор с двумя осцилляторами, огибающей и LFO. | SFX (7) | 915 | 0.11 | [SYNX2.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/SYNX2.zip) |
+| <img src="controller/images/app-icon.png" alt="SYNTHESIS SYNx2 MIDI controller" width="96" height="96"> | [MIDI-контроллер SYNTHESIS SYNx2 для Windows: управление Note/Gate, PC-клавиатура, Latch и MIDI-вход из DAW.](controller/README.ru.md) | Windows MIDI | — | 0.1.2 | [SYNTHESIS-SYNx2-0.1.2-Windows-x64-Setup.exe](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/SYNTHESIS-SYNx2-0.1.2-Windows-x64-Setup.exe) |
 
 <!-- END GENERATED EFFECT CATALOG -->
