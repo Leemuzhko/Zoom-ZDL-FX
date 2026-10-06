@@ -1,0 +1,48 @@
+{
+  "version": "0.1.2",
+  "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "win32",
+  "dependencies": {
+    "pyinstaller": "6.22.0",
+    "mido": "1.3.3",
+    "python-rtmidi": "1.5.8",
+    "packaging": "26.3"
+  },
+  "installer": "SYNTHESIS-SYNx2-0.1.2-Windows-x64-Setup.exe",
+  "sha256": "b51abda27c30b65720e728c9c38ff2be8d22c4c1c34cf41b32247248f16913d4",
+  "driver_bundled": false,
+  "signed": false,
+  "frozen_smoke": {
+    "passed": true,
+    "frozen": true,
+    "note": "C4 · 60",
+    "press_gate": "ON",
+    "release_gate": "OFF",
+    "physical_midi_ports_opened": false
+  },
+  "install_smoke": {
+    "uninstall_exit": 0,
+    "icon_present": true,
+    "guide_present": true,
+    "installed_exe_exit": 0,
+    "install_exit": 0
+  },
+  "gui_scale": {
+    "effective_fullhd_125": "Small",
+    "presets": [
+      "Small",
+      "Medium",
+      "Large"
+    ],
+    "analog_tests_after_trace_fix": 13,
+    "selected_icon": "A-classic-panel",
+    "focused_tests": 59
+  },
+  "shortcut_icon": {
+    "target_is_exe": true,
+    "explicit_versioned_ico": true,
+    "uninstall_exit": 0,
+    "install_exit": 0,
+    "icon_location_verified": true
+  }
+}

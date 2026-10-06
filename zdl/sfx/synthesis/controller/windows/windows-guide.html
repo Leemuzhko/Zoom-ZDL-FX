@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>SYNTHESIS SYNx2 — Windows / DAW setup</title>
+<style>body{font:18px/1.65 system-ui,sans-serif;max-width:850px;margin:45px auto;padding:0 24px;background:#eee7d5;color:#292419}h1,h2{color:#4c3823}a{color:#86521b}section{border-top:2px solid #9e8455;margin-top:35px}code{background:#ded1b5;padding:2px 5px}.button{display:inline-block;background:#4c3823;color:white;padding:9px 20px;border-radius:5px;text-decoration:none}</style>
+<h1>SYNTHESIS SYNx2</h1><p><a href="#ru">Русская инструкция ↓</a></p>
+<h2>Install and start</h2>
+<p>For small screens, choose <b>Small</b> in the header's <b>Small / Medium / Large</b> selector. It scales the complete panel without reconnecting MIDI. Startup selects an appropriate size automatically.</p>
+<ol><li>Run the SYNTHESIS SYNx2 Windows Setup. Python is included; no separate Python installation is needed.</li>
+<li>Launch SYNTHESIS SYNx2 from the Start menu. Connect the original MS-70CDR by USB and put SYNx2 (ID915) or SYN10A (ID914) in slot 1, 2 or 3 of the current patch.</li>
+<li>Select the Zoom output and reply ports, slot and MIDI channel. For mouse/PC playing choose <b>PC / screen only</b>. Click <b>Connect</b>, then enable <b>PC Keyboard</b> if desired. Z plays the first C.</li>
+<li>Sound comes from the pedal, not the computer. Connect the pedal's audio output, enable an oscillator and set its level. Demo previews commands without MIDI or sound.</li></ol>
+<h2>Playing from a DAW: install LoopBe1 separately</h2>
+<p>LoopBe1 is only needed for a virtual MIDI route from your DAW. It is not included in this package. A physical MIDI input or mouse/PC keyboard does not require it.</p>
+<p><a class="button" href="https://nerds.de/en/download.html">Official LoopBe1 download</a></p>
+<ol><li>On the official page, find <b>LoopBe1 kernel driver</b> and download <code>setuploopbe1.exe</code> (currently version 1.6). Do not select LoopBe30 or ipMIDI.</li>
+<li>Close MIDI applications. In the downloaded file's Properties → Digital Signatures, verify publisher <b>Daniel Schmitt</b> and a valid signature. Run the vendor installer, accept its license if applicable to you, and approve the Windows administrator prompt. Restart if requested.</li>
+<li>Open the DAW again. Enable <b>LoopBe Internal MIDI</b> in its MIDI output settings and select it as the MIDI track's output. Set the same channel, usually channel 1, in both applications.</li>
+<li>In SYNTHESIS SYNx2 click <b>Refresh</b>, then <b>DAW input</b>, and check that the input is <b>LoopBe Internal MIDI</b>. Keep output/reply assigned to Zoom, not LoopBe. Click <b>Connect</b>.</li>
+<li>Play or run a MIDI clip in the DAW. The panel's NOTE and Gate indicators should change. If they change without sound, check the pedal oscillator, level and audio connection.</li></ol>
+<p><b>FL Studio example:</b> Options → MIDI settings → Output: enable LoopBe Internal MIDI and assign an unused Port number. Add a MIDI Out channel and set its Port to that number and Channel to 1. Put the notes on that channel.</p>
+<h2>If it does not work</h2><ul>
+<li>No LoopBe port: restart the DAW, press Refresh, check the driver installation and reboot if needed.</li>
+<li>LoopBe is muted: remove any MIDI Thru route feeding LoopBe back into itself, then unmute it in the tray icon. Feedback protection deliberately mutes MIDI loops.</li>
+<li>Zoom port unavailable: close Zoom Effect Manager or another program holding the same port.</li>
+<li>Driver signature/certificate error: stop and use the vendor support instructions. Do not disable Windows driver-signature enforcement.</li></ul>
+<p><b>License:</b> LoopBe1 is free for personal non-commercial use. Commercial use beyond its evaluation period requires a vendor license. Bundling it with another application requires separate permission/company licensing, even when that application is free. <a href="https://nerds.de/en/loopbe1.html">Official terms</a>. Permission has not yet been granted for this package.</p>
+<p>The application and installer are currently unsigned. A Windows warning may appear. Verify the supplied SHA-256 receipt and use only the package obtained from the project owner. Windows x64 is the build target; Windows 10/11 compatibility beyond the tested machine is not yet established.</p>
+<section id="ru" lang="ru"><h1>Установка и подключение к DAW</h1>
+<h2>Запуск программы</h2><ol>
+<li>На небольшом экране выбери <b>Small</b> в селекторе <b>Small / Medium / Large</b> в шапке. Вся панель уменьшается без переподключения MIDI. При запуске подходящий размер выбирается автоматически.</li>
+<li>Запусти установщик SYNTHESIS SYNx2. Python уже включён — отдельно устанавливать его не нужно.</li>
+<li>Открой программу из меню «Пуск». Подключи оригинальный MS-70CDR по USB. В текущем патче поставь SYNx2 (ID915) или SYN10A (ID914) в слот 1, 2 или 3.</li>
+<li>Выбери выход и порт ответов Zoom, слот и MIDI-канал. Для экранной/компьютерной клавиатуры выбери <b>PC / screen only</b>, нажми <b>Connect</b> и включи <b>PC Keyboard</b>. Z играет первую ноту C.</li>
+<li>Звук идёт из педали. Подключи её аудиовыход, включи осциллятор и подними уровень. Demo только показывает команды — MIDI и звук не отправляются.</li></ol>
+<h2>Для DAW: отдельная установка LoopBe1</h2>
+<p>LoopBe1 создаёт виртуальный MIDI-порт между DAW и программой. В установщик он не включён. Для обычного MIDI-входа и игры мышью/клавиатурой этот драйвер не нужен.</p>
+<p><a class="button" href="https://nerds.de/en/download.html">Скачать LoopBe1 с официального сайта</a></p>
+<ol><li>Найди раздел <b>LoopBe1 kernel driver</b> и скачай <code>setuploopbe1.exe</code> (сейчас версия 1.6). Не перепутай с LoopBe30 или ipMIDI.</li>
+<li>Закрой MIDI-программы. В свойствах скачанного файла → «Цифровые подписи» проверь действительную подпись <b>Daniel Schmitt</b>. Запусти установщик автора, ознакомься с лицензией, подтверди запрос администратора Windows. Перезагрузи компьютер, если установщик попросит.</li>
+<li>Снова открой DAW. В её MIDI-настройках включи выход <b>LoopBe Internal MIDI</b> и назначь его выходом MIDI-дорожки. В DAW и SYNTHESIS SYNx2 выбери одинаковый канал — обычно 1.</li>
+<li>В SYNTHESIS SYNx2 нажми <b>Refresh</b>, затем <b>DAW input</b>. Проверь, что вход — <b>LoopBe Internal MIDI</b>. Выход и порт ответов должны оставаться Zoom. Нажми <b>Connect</b>.</li>
+<li>Запусти MIDI-клип или сыграй в DAW. NOTE и Gate должны изменяться. Если индикаторы реагируют, но звука нет — проверь осцилляторы, уровни и аудиовыход педали.</li></ol>
+<p><b>Пример FL Studio:</b> Options → MIDI settings → Output: включи LoopBe Internal MIDI и назначь свободный номер Port. Добавь канал MIDI Out, поставь тот же Port и Channel 1. Ноты размещай на этом канале.</p>
+<h2>Если не работает</h2><ul>
+<li>Порта нет: перезапусти DAW, нажми Refresh, проверь установку драйвера; при необходимости перезагрузи Windows.</li>
+<li>LoopBe заглушён: убери MIDI Thru, возвращающий сигнал обратно в LoopBe, затем сними Mute через значок драйвера в трее.</li>
+<li>Zoom недоступен: закрой Zoom Effect Manager и другие программы, занимающие этот порт.</li>
+<li>Ошибка подписи драйвера: останови установку и обратись к инструкциям автора. Проверку подписей Windows отключать не нужно.</li></ul>
+<p><b>Лицензия:</b> личное некоммерческое использование LoopBe1 бесплатно. Для коммерческого использования после пробного периода требуется лицензия автора. Включение драйвера в чужой пакет требует отдельного разрешения даже для бесплатной программы. <a href="https://nerds.de/en/loopbe1.html">Условия автора</a>. Разрешение на включение в этот пакет пока не получено.</p>
+<p>Программа и установщик пока не подписаны — Windows может показать предупреждение. Сверяй SHA-256 с отчётом сборки и используй пакет от владельца проекта. Сборка для Windows x64; совместимость Windows 10/11 за пределами проверенного компьютера пока не подтверждена.</p></section></html>

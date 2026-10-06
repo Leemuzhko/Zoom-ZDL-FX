@@ -32,60 +32,29 @@ Development is ongoing. The target device family is **MS-50G / MS-70G / MS-60B /
 
 Every effect is distributed as a **complete folder package**. Keep the `.ZDL`, matching `.json`, PNG icon/image and any accompanying files together.
 
-Cards below are separate opaque-white preview copies. The original Manager
+Cards in the project catalogues are separate opaque-white preview copies. The original Manager
 icons inside `zdl/` and the downloadable effect packages are unchanged.
 
 <!-- BEGIN GENERATED EFFECT CATALOG -->
 
-### IR and HYBRID IR [Group 2 - Filter]
-
-| Effect Card | Effect Description | Effect Group | ID | Version | File Name | Download |
-| --- | --- | --- | --- | --- | --- | --- |
-| <img src="assets/effect-cards/GJ_IR.png" alt="GOJIRA" width="128" height="96"> | HYBRID IR cabinet bank. IR slots: SM57, R121, MD421, C414. | Filter (2) | 567 | 1.00 | `GJ_IR.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/GJ_IR.zip) |
-| <img src="assets/effect-cards/HYBRIDIR.png" alt="HYBRIDIR" width="128" height="96"> | HYBRID IR Demo| Filter (2) | 565 | 1.00 | `HYBRIDIR.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/HYBRIDIR.zip) |
-| <img src="assets/effect-cards/IRDUAL4.png" alt="IRDUAL4" width="128" height="96"> | Stereo IR loader with 4x2048 taps IR bank. Experimental. | Filter (2) | 552 | 1.00 | `IRDUAL4.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/IRDUAL4.zip) |
-| <img src="assets/effect-cards/M1960VT1.png" alt="M1960VT1" width="128" height="96"> | Stereo IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960V cab| Filter (2) | 555 | 1.00 | `M1960VT1.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/M1960VT1.zip) |
-| <img src="assets/effect-cards/M1960VT2.png" alt="M1960VT2" width="128" height="96"> | Stereo IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960V cab| Filter (2) | 556 | 1.00 | `M1960VT2.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/M1960VT2.zip) |
-| <img src="assets/effect-cards/MS1960.png" alt="Marshall 1960 A/AX/AV/B" width="128" height="96"> | Stereo IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960 A/AX/AV/B cabs| Filter (2) | 566 | 1.00 | `MS1960.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960.zip) |
-| <img src="assets/effect-cards/MS1960VS.png" alt="MS1960VS" width="128" height="96"> | Stereo IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960V with SS amp | Filter (2) | 554 | 1.00 | `MS1960VS.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960VS.zip) |
-| <img src="assets/effect-cards/TRUCAB.png" alt="TRUE CAB" width="128" height="96"> | HYBRID IR cabinet bank. IR slots: AMT112, AMT212, AMT412, YE112, 1960A, 1960B, ME212, ME412.| Filter (2) | 568 | 1.00 | `TRUCAB.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/TRUCAB.zip) |
-| <img src="assets/effect-cards/TRUCAB2.png" alt="TRUE CAB 2" width="128" height="96"> | HYBRID IR cabinet bank. IR slots: AMT112, AMT212, AMT412, YE112, 1960A, 1960B, 412AV, 412AX.| Filter (2) | 569 | 1.00 | `TRUCAB2.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/TRUCAB2.zip) |
-
-### Experimental NAM captures [Group 3 - Drive]
-
-| Effect Card | Effect Description | Effect Group | ID | Version | File Name | Download |
-| --- | --- | --- | --- | --- | --- | --- |
-| <img src="assets/effect-cards/NAM5150.png" alt="NAM5150" width="128" height="96"> | NAM 5150  - experimental| Drive (3) | 581 | 1.00 | `NAM5150.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/NAM5150.zip) |
-| <img src="assets/effect-cards/NAMPLEX.png" alt="NAMPLEX" width="128" height="96"> | NAM PLEXI - experimental| Drive (3) | 580 | 1.00 | `NAMPLEX.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/NAMPLEX.zip) |
-
-### Modified Guitar Amps [Group 4 - GuitarAmp]
-
-| Effect Card | Effect Description | Effect Group | ID | Version | File Name | Download |
-| --- | --- | --- | --- | --- | --- | --- |
-| <img src="assets/effect-cards/CABSIM.png" alt="CABSIM" width="128" height="96"> | CABSIM - Flattened Amp model based on the FD COMBO with custom cab| GuitarAmp (4) | 339 | 1.00 | `CABSIM.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/CABSIM.zip) |
-| <img src="assets/effect-cards/ENGL.png" alt="ENGL" width="128" height="96"> | ENGL - based on ALIEN with custom cab and visuals| GuitarAmp (4) | 337 | 1.00 | `ENGL.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/ENGL.zip) |
-| <img src="assets/effect-cards/ENGL2.png" alt="ENGL2" width="128" height="96"> | ENGL2 - based on ALIEN with custom cab| GuitarAmp (4) | 338 | 1.00 | `ENGL2.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/ENGL2.zip) |
-| <img src="assets/effect-cards/JCM800.png" alt="JCM800" width="128" height="96"> | JCM800 - based on MS CRUNCH with custom cab and visuals| GuitarAmp (4) | 351 | 1.00 | `JCM800.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/JCM800.zip) |
-| <img src="assets/effect-cards/PLEXI.png" alt="PLEXI" width="128" height="96"> | PLEXI - based on MS 1959 with custom cab and visuals| GuitarAmp (4) | 340 | 1.00 | `PLEXI.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/PLEXI.zip) |
-| <img src="assets/effect-cards/PLEXI2.png" alt="Marshall PLEXI" width="128" height="96"> | Marshall PLEXI - based on MS 1959 with custom cab and visuals | GuitarAmp (4) | 370 | 1.00 | `PLEXI2.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/PLEXI2.zip) |
-
-### Synths and Special FX [Group 7 - SFX]
-
-| Effect Card | Effect Description | Effect Group | ID | Version | File Name | Download |
-| --- | --- | --- | --- | --- | --- | --- |
-| <img src="assets/effect-cards/SYNX2.png" alt="SYNTHESIS 2xOSC+LFO" width="128" height="96"> | SYNTHESIS - Synthesator wit 2xOscillators, Envelope and LFO. | SFX (7) | 915 | 0.11 | `SYNX2.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/SYNX2.zip) |
+| Type / Group | Project | Effects | Catalog / Description |
+| --- | --- | ---: | --- |
+| Filter (2) | HYBRID IR | 5 | [Catalog](zdl/filter/hybrid-ir/README.md) |
+| Filter (2) | DUAL IR loaders | 4 | [Catalog](zdl/filter/DUAL-IR/README.md) |
+| Drive (3) | Experimental NAM captures | 2 | [Catalog](zdl/drive/nam/README.md) |
+| GuitarAmp (4) | Modified Guitar Amps | 6 | [Catalog](zdl/guitar-amp/modified-amps/README.md) |
+| SFX (7) | SYNTHESIS SYNx2 | 1 | [Catalog](zdl/sfx/synthesis/README.md) |
 
 <!-- END GENERATED EFFECT CATALOG -->
 
 A tagged release also contains **All-ZDL-FX-<version>.zip** with the complete collection.
 
-### SYNTHESIS / SYNX2
+Browse a project above for its effect cards and downloads. Each project also has
+a `<project>-project.zip` release package. [Catalogue maintenance](CATALOG.md).
 
-Two oscillators, selectable envelopes and synth-only tremolo/vibrato LFO.
-Tap integration uses the original **MS-70CDR SYSTEM 2.10** profile; other
-models/firmware are unverified. Note is a manual parameter, not MIDI Note input.
-SYNX2 uses ID915, also used by the SYN11A test build: install it as a replacement,
-not as an independent additional effect. Start with a low monitoring level.
+### SYNTHESIS SYNx2 + MIDI controller
+
+[Effect, Windows installer and DAW instructions](zdl/sfx/synthesis/README.md).
 
 <a id="installation"></a>
 
@@ -141,12 +110,6 @@ See also: **[Zoom Effect Manager — Quick start](https://zoomeffectmanager.com/
 
 Test one custom effect at a time in an otherwise simple patch before building a larger chain. Back up your existing effects/presets before experimenting.
 
-## IR loader note
-
-Some IR-loader variants can exceed the available DSP budget depending on IR length and the rest of the chain. If you hear crackling or other artifacts, use a shorter configuration or a lighter routing mode where the effect provides one.
-
-The DSP cost field used by experimental/custom effects should not be treated as a reliable CPU percentage.
-
 ## Build your own cabinet effects
 
 If you want to prepare your own cabinet responses instead of only downloading finished effects, see **[HYBRID IR](https://github.com/Leemuzhko/HYBRID-IR)**.
@@ -157,7 +120,9 @@ HYBRID IR can prepare conventional IRs and hybrid FIR/IIR models and package the
 
 A repository tag matching `v*` (for example `v1.0.0`) creates:
 
-- one ZIP for every top-level effect folder under `zdl/`;
+- one ZIP for every effect package listed in `catalog.json`, keeping the existing asset names;
+- one project ZIP per project, including SYNTHESIS with its Windows controller;
+- the standalone SYNTHESIS Windows installer and DAW guide;
 - one complete collection ZIP: `All-ZDL-FX-<version>.zip`.
 
 The workflow can also be started manually from GitHub Actions to build the same ZIPs as workflow artifacts without publishing a Release.
