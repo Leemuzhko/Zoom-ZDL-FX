@@ -77,6 +77,10 @@ def render(root):
             rows = [('| Effect Card | Effect Description | Effect Group | ID | Version | Download |' if lang == 'en'
                      else '| Карточка эффекта | Описание эффекта | Группа | ID | Версия | Скачать |'),
                     '| --- | --- | --- | --- | --- | --- |']
+            if project.get('archive', True) and project.get('archive_name'):
+                archive_name = project['archive_name']
+                label = 'Download all effects in this project' if lang == 'en' else 'Скачать все эффекты проекта'
+                rows[:0] = [f'**{label}: [{archive_name}]({RELEASE}{archive_name})**', '']
             for effect in effects:
                 rows.append('| ' + ' | '.join([
                     f'<img src="cards/{effect["name"]}.png" alt="{html.escape(effect["meta"]["name"], quote=True)}" width="128" height="96">',

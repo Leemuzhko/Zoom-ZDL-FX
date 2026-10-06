@@ -39,6 +39,8 @@ class CatalogTests(unittest.TestCase):
                 text = (ROOT / project['path'] / language).read_text(encoding='utf-8')
                 rows = [line for line in text.splitlines() if line.startswith('| <img ')]
                 expected = [e for e in manifest['effects'] if e['project'] == project['id']]
+                if project.get('archive_name'):
+                    self.assertIn('[' + project['archive_name'] + ']', text)
                 self.assertEqual(len(rows), len(expected))
                 ids = [int(row.split(' | ')[3]) for row in rows]
                 self.assertEqual(ids, sorted(ids))
@@ -100,8 +102,13 @@ class CatalogTests(unittest.TestCase):
     def test_release_archives_preserve_single_effect_names_and_bundle_controller(self):
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory)
+            (output / 'synthesis-project.zip').write_bytes(b'stale project archive')
             build(ROOT, output, 'test')
             manifest = load(ROOT)
+            for project in manifest['projects']:
+                if project.get('archive', True):
+                    self.assertTrue((output / project['archive_name']).is_file())
+                    self.assertFalse((output / (project['id'] + '-project.zip')).exists())
             for effect in manifest['effects']:
                 folder = ROOT / effect['path']
                 with ZipFile(output / (effect['name'] + '.zip')) as archive:
@@ -109,13 +116,15 @@ class CatalogTests(unittest.TestCase):
                     for file in folder.iterdir():
                         if file.is_file():
                             self.assertEqual(archive.read(effect['name'] + '/' + file.name), file.read_bytes())
-            with ZipFile(output / 'synthesis-project.zip') as archive:
+            self.assertFalse((output / 'synthesis-project.zip').exists())
+            with ZipFile(output / 'All_SYNTHESIS.ZIP') as archive:
                 self.assertIn('synthesis/SYNX2/SYNX2.ZDL', archive.namelist())
                 self.assertIn('synthesis/controller/windows/SYNTHESIS-SYNx2-0.1.2-Windows-x64-Setup.exe', archive.namelist())
             self.assertTrue((output / 'SYNTHESIS-SYNx2-0.1.2-Windows-x64-Setup.exe').is_file())
             with ZipFile(output / 'All-ZDL-FX-test.zip') as archive:
                 self.assertIn('Zoom-ZDL-FX-test/catalog.json', archive.namelist())
                 self.assertIn('Zoom-ZDL-FX-test/zdl/sfx/synthesis/SYNX2/SYNX2.ZDL', archive.namelist())
+                self.assertIn('Zoom-ZDL-FX-test/zdl/sfx/synthesis/controller/windows/SYNTHESIS-SYNx2-0.1.2-Windows-x64-Setup.exe', archive.namelist())
 
     def test_local_markdown_and_card_links_exist(self):
         import re

@@ -50,7 +50,7 @@ icons inside `zdl/` and the downloadable effect packages are unchanged.
 A tagged release also contains **All-ZDL-FX-<version>.zip** with the complete collection.
 
 Browse a project above for its effect cards and downloads. Each project also has
-a `<project>-project.zip` release package. [Catalogue maintenance](CATALOG.md).
+a `All_<PROJECT>.ZIP` release package. [Catalogue maintenance](CATALOG.md).
 
 ### SYNTHESIS SYNx2 + MIDI controller
 
@@ -121,7 +121,7 @@ HYBRID IR can prepare conventional IRs and hybrid FIR/IIR models and package the
 A repository tag matching `v*` (for example `v1.0.0`) creates:
 
 - one ZIP for every effect package listed in `catalog.json`, keeping the existing asset names;
-- one project ZIP per project, including SYNTHESIS with its Windows controller;
+- one All_<PROJECT>.ZIP per project, including SYNTHESIS with the Windows controller;
 - the standalone SYNTHESIS Windows installer and DAW guide;
 - one complete collection ZIP: `All-ZDL-FX-<version>.zip`.
 

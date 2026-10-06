@@ -6,35 +6,41 @@
       "type": "filter",
       "title": "HYBRID IR",
       "path": "zdl/filter/hybrid-ir",
-      "title_ru": "HYBRID IR"
+      "title_ru": "HYBRID IR",
+      "archive_name": "All_HYBRID_IR.ZIP"
     },
     {
       "id": "dual-ir",
       "type": "filter",
       "title": "DUAL IR loaders",
       "path": "zdl/filter/DUAL-IR",
-      "title_ru": "Загрузчики DUAL IR"
+      "title_ru": "Загрузчики DUAL IR",
+      "archive_name": "All_DUAL_IR.ZIP"
     },
     {
       "id": "nam",
       "type": "drive",
       "title": "Experimental NAM captures",
       "path": "zdl/drive/nam",
-      "title_ru": "Экспериментальные NAM-модели"
+      "title_ru": "Экспериментальные NAM-модели",
+      "archive_name": "All_NAM.ZIP"
     },
     {
       "id": "modified-amps",
       "type": "guitar-amp",
       "title": "Modified Guitar Amps",
       "path": "zdl/guitar-amp/modified-amps",
-      "title_ru": "Модифицированные гитарные усилители"
+      "title_ru": "Модифицированные гитарные усилители",
+      "archive_name": "All_MODIFIED_AMPS.ZIP"
     },
     {
       "id": "synthesis",
       "type": "sfx",
       "title": "SYNTHESIS SYNx2",
       "path": "zdl/sfx/synthesis",
-      "title_ru": "SYNTHESIS SYNx2"
+      "title_ru": "SYNTHESIS SYNx2",
+      "archive": true,
+      "archive_name": "All_SYNTHESIS.ZIP"
     }
   ],
   "effects": [

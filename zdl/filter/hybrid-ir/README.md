@@ -15,6 +15,8 @@ The DSP cost field used by experimental/custom effects should not be treated as 
 
 <!-- BEGIN GENERATED EFFECT CATALOG -->
 
+**Download all effects in this project: [All_HYBRID_IR.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/All_HYBRID_IR.ZIP)**
+
 | Effect Card | Effect Description | Effect Group | ID | Version | Download |
 | --- | --- | --- | --- | --- | --- |
 | <img src="cards/HYBRIDIR.png" alt="HYBRIDIR" width="128" height="96"> | HYBRID IR Demo | Filter (2) | 565 | 1.00 | [HYBRIDIR.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/HYBRIDIR.zip) |
