@@ -34,7 +34,8 @@
       "type": "sfx",
       "title": "SYNTHESIS SYNx2",
       "path": "zdl/sfx/synthesis",
-      "title_ru": "SYNTHESIS SYNx2"
+      "title_ru": "SYNTHESIS SYNx2",
+      "archive": false
     }
   ],
   "effects": [

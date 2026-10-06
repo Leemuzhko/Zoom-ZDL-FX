@@ -26,7 +26,13 @@ def build(root, destination, version):
     for effect in manifest['effects']:
         archive(destination / (effect['name'] + '.zip'), root / effect['path'], effect['name'])
     for project in manifest['projects']:
-        archive(destination / (project['id'] + '-project.zip'), root / project['path'], project['id'])
+        project_zip = (destination / (project['id'] + '-project.zip')).resolve()
+        if project_zip.parent != destination.resolve():
+            raise ValueError('Invalid project archive path')
+        if project.get('archive', True):
+            archive(project_zip, root / project['path'], project['id'])
+        else:
+            project_zip.unlink(missing_ok=True)
     for file in controller.iterdir():
         if file.is_file():
             shutil.copy2(file, destination / file.name)

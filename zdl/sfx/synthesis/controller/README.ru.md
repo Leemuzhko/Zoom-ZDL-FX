@@ -7,9 +7,6 @@
 а не ПК. Другие модели педалей не подтверждены.
 
 **[Скачать Windows-установщик 0.1.2](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/SYNTHESIS-SYNx2-0.1.2-Windows-x64-Setup.exe)**
-или использовать [включённый установщик](windows/SYNTHESIS-SYNx2-0.1.2-Windows-x64-Setup.exe).
-Ссылка релиза заработает после слияния PR и публикации нового релиза. В прежних
-релизах приложения ещё нет.
 
 - Python/Tk и MIDI-runtime включены. Установщик Windows x64 не подписан.
 - Винтажная панель, восемь регуляторов, 49 клавиш, сдвиг октав, отключаемая

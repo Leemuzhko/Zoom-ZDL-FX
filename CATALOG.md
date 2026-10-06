@@ -27,11 +27,11 @@ python scripts/package_release.py --version preview
 ```
 
 Packaging uses the validated manifest, retaining previous `<effect>.zip` names,
-and adds `<project>-project.zip` and `All-ZDL-FX-<version>.zip`. SYNTHESIS project
-and full collection include the controller; EXE, guide and receipt are also
-attached separately. LoopBe1 is external. `tests/package-baseline.json` records
+and adds `<project>-project.zip` for projects with archive enabled and
+`All-ZDL-FX-<version>.zip`. SYNTHESIS has no separate project archive: the effect
+and controller are downloaded separately or as part of the full collection.
+EXE, guide and receipt are attached separately. LoopBe1 is external. `tests/package-baseline.json` records
 pre-migration package hashes.
 
 PRs validate catalogues, hashes and archives and produce workflow artifacts.
-Only a `v*` tag publishes a Release. This PR does not merge main or publish a new
-release; existing tags and release assets remain unchanged.
+Only a `v*` tag publishes a Release.
