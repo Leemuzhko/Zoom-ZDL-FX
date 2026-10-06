@@ -40,6 +40,8 @@ class CatalogTests(unittest.TestCase):
                 rows = [line for line in text.splitlines() if line.startswith('| <img ')]
                 expected = [e for e in manifest['effects'] if e['project'] == project['id']]
                 self.assertEqual(len(rows), len(expected))
+                ids = [int(row.split(' | ')[3]) for row in rows]
+                self.assertEqual(ids, sorted(ids))
                 for row, effect in zip(rows, expected):
                     self.assertIn(effect['description']['ru' if language.endswith('.ru.md') else 'en'], row)
                     self.assertIn('/download/' + effect['name'] + '.zip', row)

@@ -11,6 +11,8 @@ GuitarAmp 4, SFX 7. Projects describe product families.
 descriptions were imported from the owner's READMEs at
 `febcec184ed54e7653a28ffe88322007883066f9`, not older sidecars. ZDL bytes own
 ID/version/GID; sidecars own the Manager image reference and display name.
+Effect tables are sorted by numeric ID read from the ZDL, ascending; the name
+breaks ties. EN and RU use the same order.
 
 To add an effect, place its complete package in the project and add a manifest
 entry. To add a project, add paired READMEs with catalogue markers. Human text

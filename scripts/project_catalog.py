@@ -48,6 +48,7 @@ def load(root):
     actual = {p.parent.resolve() for p in (root / 'zdl').rglob('*.ZDL')}
     if actual != paths:
         raise ValueError('Manifest must cover every ZDL exactly once')
+    manifest['effects'].sort(key=lambda effect: (effect['effect_id'], effect['name']))
     return manifest
 
 
