@@ -1,7 +1,0 @@
-{
-    "name": "IRDUAL4",
-    "inDeviceFileName": "IRDUAL4.ZDL",
-    "iconFile": "IRDUAL4.png",
-    "descriptionEng": "4x2048 Q15 IR bank. Page1 IR A OFF-1-4 / TRNC / Level0-150; page2 IR B / TRNC / Level; page3 Single-Dual. Defaults IR1,TRNC1024,Level100,Dual. Float32 histories; Single averages stereo through A. Approx unity100 at full2048. Cost20 experimental.",
-    "descriptionRus": "IRDUAL4"
-}
