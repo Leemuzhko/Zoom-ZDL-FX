@@ -1,2 +1,7 @@
-# Keep the owner-supplied SYNX2 package byte-exact, including JSON line endings.
-zdl/SYNX2/* -text -filter -diff -merge
+# Preserve all distributed effect/installer bytes across platforms.
+zdl/**/*.ZDL -text -filter -diff -merge
+zdl/**/*.json -text -filter -diff -merge
+zdl/**/*.png -text -filter -diff -merge
+zdl/**/*.exe -text -filter -diff -merge
+*.md text eol=lf
+*.MD text eol=lf

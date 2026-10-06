@@ -1,105 +1,109 @@
-"""Public README catalogue acceptance against the actual distribution files."""
-from pathlib import Path
+"""Publication checks: preserved effect bytes, edited descriptions, links and ZIPs."""
+import hashlib
+import importlib.util
 import json
-import html
-import struct
-import unittest
+from pathlib import Path
 import shutil
 import subprocess
 import sys
 import tempfile
+import unittest
+from zipfile import ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
-HEADER = '| Effect Card | Effect Description | Effect Group | ID | Version | File Name | Download |'
-GROUPS = {2:'Filter',3:'Drive',4:'GuitarAmp',7:'SFX'}
+sys.path.insert(0, str(ROOT / 'scripts'))
+from project_catalog import load, render
+from package_release import build
 
 
 class CatalogTests(unittest.TestCase):
-    def test_bad_readme_preflight_does_not_write_any_generated_outputs(self):
-        with tempfile.TemporaryDirectory(prefix='catalogue-failure-') as tmp:
-            root = Path(tmp)
-            shutil.copytree(ROOT/'zdl/SYNX2',root/'zdl/SYNX2')
-            for name in ('README.md','README.ru.md'):
-                text = (ROOT/name).read_text(encoding='utf-8')
-                if name == 'README.ru.md':
-                    text = text.replace('<!-- END GENERATED EFFECT CATALOG -->','MISSING END MARKER')
-                (root/name).write_text(text,encoding='utf-8')
-            preview = root/'assets/effect-cards/SYNX2.png'
-            preview.parent.mkdir(parents=True)
-            preview.write_bytes(b'preserve previous derived artifact')
-            before = {p.relative_to(root):p.read_bytes() for p in root.rglob('*') if p.is_file()}
-            run = subprocess.run([sys.executable,'-B',str(ROOT/'scripts/update_catalog.py'),
-                                  '--root',str(root)],capture_output=True)
-            self.assertNotEqual(run.returncode,0)
-            self.assertEqual({p.relative_to(root):p.read_bytes() for p in root.rglob('*') if p.is_file()},before)
+    def test_all_original_effect_files_remain_byte_exact(self):
+        baseline = json.loads((ROOT / 'tests/package-baseline.json').read_text())
+        actual = {}
+        for effect in load(ROOT)['effects']:
+            for file in (ROOT / effect['path']).iterdir():
+                if file.is_file():
+                    actual[effect['name'] + '/' + file.name] = hashlib.sha256(file.read_bytes()).hexdigest()
+        self.assertEqual(actual, baseline)
 
-    def test_generator_preserves_prose_and_description_like_old_sentinels(self):
-        with tempfile.TemporaryDirectory(prefix='catalogue-test-') as tmp:
-            root = Path(tmp)
-            shutil.copytree(ROOT/'zdl/SYNX2',root/'zdl/SYNX2')
-            meta_path = root/'zdl/SYNX2/SYNX2.json'
-            meta = json.loads(meta_path.read_text(encoding='utf-8'))
-            meta['descriptionEng'] = 'A tagged release is mentioned inside this description.'
-            meta['descriptionRus'] = 'В релиз также может входить описание.'
-            meta_path.write_text(json.dumps(meta),encoding='utf-8')
-            for name,heading in (('README.md','## Effects\n'),('README.ru.md','## Эффекты\n')):
-                text = (ROOT/name).read_text(encoding='utf-8')
-                note = 'KEEP THIS PROSE <!-- BEGIN GENERATED EFFECT CATALOG --> example <!-- END GENERATED EFFECT CATALOG -->'
-                text = text.replace(heading,heading+'\n### User note\n'+note+'\n',1)
-                (root/name).write_text(text,encoding='utf-8')
-            command = [sys.executable,'-B',str(ROOT/'scripts/update_catalog.py'),'--root',str(root)]
-            subprocess.run(command,check=True,capture_output=True)
-            first = {name:(root/name).read_bytes() for name in ('README.md','README.ru.md')}
-            self.assertTrue(all(note.encode() in content for content in first.values()))
-            subprocess.run(command,check=True,capture_output=True)
-            self.assertEqual({name:(root/name).read_bytes() for name in first},first)
+    def test_generated_catalogues_are_current_and_root_is_bounded(self):
+        for file, content in render(ROOT).items():
+            self.assertEqual(file.read_bytes(), content, str(file))
+        manifest = load(ROOT)
+        for language in ('README.md', 'README.ru.md'):
+            root = (ROOT / language).read_text(encoding='utf-8')
+            self.assertNotIn('| <img ', root)
+            self.assertEqual(len([line for line in root.splitlines() if line.startswith('| ')]) - 2,
+                             len(manifest['projects']))
+            for project in manifest['projects']:
+                text = (ROOT / project['path'] / language).read_text(encoding='utf-8')
+                rows = [line for line in text.splitlines() if line.startswith('| <img ')]
+                expected = [e for e in manifest['effects'] if e['project'] == project['id']]
+                self.assertEqual(len(rows), len(expected))
+                for row, effect in zip(rows, expected):
+                    self.assertIn(effect['description']['ru' if language.endswith('.ru.md') else 'en'], row)
+                    self.assertIn('/download/' + effect['name'] + '.zip', row)
+                    self.assertEqual(len(row.split(' | ')), 7)
 
-    def test_white_preview_copies_preserve_size_and_opaque_source_pixels(self):
+    def test_imported_user_descriptions_survive_generator(self):
+        manifest = load(ROOT)
+        self.assertEqual(next(e for e in manifest['effects'] if e['name'] == 'IRDUAL4')['description']['en'],
+                         'Stereo IR loader with 4x2048 taps IR bank. Experimental.')
+        self.assertIn('Synthesator wit 2xOscillators',
+                      next(e for e in manifest['effects'] if e['name'] == 'SYNX2')['description']['en'])
+
+    def test_invalid_readme_causes_no_output_writes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory) / 'repo'
+            shutil.copytree(ROOT, root, ignore=shutil.ignore_patterns('.git', 'release-assets', '__pycache__'))
+            path = root / 'zdl/sfx/synthesis/README.ru.md'
+            path.write_text(path.read_text(encoding='utf-8').replace('<!-- END GENERATED EFFECT CATALOG -->', ''), encoding='utf-8')
+            before = {p.relative_to(root): hashlib.sha256(p.read_bytes()).hexdigest() for p in root.rglob('*') if p.is_file()}
+            with self.assertRaises(ValueError):
+                render(root)
+            after = {p.relative_to(root): hashlib.sha256(p.read_bytes()).hexdigest() for p in root.rglob('*') if p.is_file()}
+            self.assertEqual(before, after)
+
+    def test_effect_cards_have_white_matte_and_original_size(self):
         from PIL import Image
-        for folder in (p for p in (ROOT/'zdl').iterdir() if p.is_dir()):
-            meta = json.loads(next(folder.glob('*.json')).read_text(encoding='utf-8-sig'))
-            with Image.open(folder/meta['iconFile']) as source, \
-                 Image.open(ROOT/'assets/effect-cards'/(folder.name+'.png')) as preview:
-                self.assertEqual(preview.size,source.size)
-                rgba = source.convert('RGBA')
-                output = preview.convert('RGBA')
-                self.assertEqual(output.getchannel('A').getextrema(),(255,255))
-                for y in range(rgba.height):
-                    for x in range(rgba.width):
-                        r,g,b,a = rgba.getpixel((x,y))
-                        expected = tuple((v*a+255*(255-a)+127)//255 for v in (r,g,b))+(255,)
-                        self.assertEqual(output.getpixel((x,y)),expected,(folder.name,x,y))
+        manifest = load(ROOT)
+        projects = {p['id']: p for p in manifest['projects']}
+        for effect in manifest['effects']:
+            with Image.open(ROOT / effect['path'] / effect['meta']['iconFile']) as source, Image.open(
+                    ROOT / projects[effect['project']]['path'] / 'cards' / (effect['name'] + '.png')) as card:
+                self.assertEqual(source.size, card.size)
+                self.assertEqual(card.convert('RGBA').getchannel('A').getextrema(), (255, 255))
 
-    def test_catalogue_has_seven_columns_and_matches_every_package(self):
-        for language in ('README.md','README.ru.md'):
-            text = (ROOT/language).read_text(encoding='utf-8')
-            self.assertTrue(HEADER in text,f'Missing seven-column catalogue: {language}')
-            self.assertNotIn('| Display Name |',text)
-            section = text.split('## Effects\n' if language == 'README.md' else '## Эффекты\n',1)[1]
-            section = section.split('A tagged release' if language == 'README.md' else 'В релиз также',1)[0]
-            rows = [line.strip('| ').split(' | ') for line in section.splitlines()
-                    if line.startswith('| <img ')]
-            folders = sorted((p for p in (ROOT/'zdl').iterdir() if p.is_dir()),
-                             key=lambda p:(next(p.glob('*.ZDL')).read_bytes()[60],p.name))
-            self.assertEqual(len(rows),len(folders))
-            for cells,folder in zip(rows,folders):
-                with self.subTest(language=language,effect=folder.name):
-                    self.assertEqual(len(cells),7)
-                    zdl = next(folder.glob('*.ZDL'))
-                    meta = json.loads(next(folder.glob('*.json')).read_text(encoding='utf-8-sig'))
-                    raw = zdl.read_bytes()
-                    self.assertIn(f'assets/effect-cards/{folder.name}.png',cells[0])
-                    description = meta.get('descriptionRus') if language == 'README.ru.md' else meta.get('descriptionEng')
-                    if not description or '\ufffd' in description:
-                        description = meta.get('descriptionEng') or meta['name']
-                    self.assertEqual(cells[1],html.escape(description.strip(),quote=False))
-                    self.assertEqual(cells[2],f'{GROUPS[raw[60]]} ({raw[60]})')
-                    self.assertEqual(cells[3],str(struct.unpack_from('<H',raw,64)[0]))
-                    self.assertEqual(cells[4],raw[68:72].decode('ascii'))
-                    self.assertIn(zdl.name,cells[5])
-                    self.assertIn(f'/download/{folder.name}.zip',cells[6])
-            headings = [line for line in section.splitlines() if line.startswith('### ')]
-            self.assertEqual(headings,['### Filter (2)','### Drive (3)','### GuitarAmp (4)','### SFX (7)'])
+    def test_release_archives_preserve_single_effect_names_and_bundle_controller(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory)
+            build(ROOT, output, 'test')
+            manifest = load(ROOT)
+            for effect in manifest['effects']:
+                folder = ROOT / effect['path']
+                with ZipFile(output / (effect['name'] + '.zip')) as archive:
+                    self.assertEqual(set(archive.namelist()), {effect['name'] + '/' + f.name for f in folder.iterdir() if f.is_file()})
+                    for file in folder.iterdir():
+                        if file.is_file():
+                            self.assertEqual(archive.read(effect['name'] + '/' + file.name), file.read_bytes())
+            with ZipFile(output / 'synthesis-project.zip') as archive:
+                self.assertIn('synthesis/SYNX2/SYNX2.ZDL', archive.namelist())
+                self.assertIn('synthesis/controller/windows/SYNTHESIS-SYNx2-0.1.2-Windows-x64-Setup.exe', archive.namelist())
+            self.assertTrue((output / 'SYNTHESIS-SYNx2-0.1.2-Windows-x64-Setup.exe').is_file())
+            with ZipFile(output / 'All-ZDL-FX-test.zip') as archive:
+                self.assertIn('Zoom-ZDL-FX-test/catalog.json', archive.namelist())
+                self.assertIn('Zoom-ZDL-FX-test/zdl/sfx/synthesis/SYNX2/SYNX2.ZDL', archive.namelist())
+
+    def test_local_markdown_and_card_links_exist(self):
+        import re
+        for readme in ROOT.rglob('*.md'):
+            if '.git' in readme.parts or 'release-assets' in readme.parts:
+                continue
+            for target in re.findall(r'\]\(([^)]+)\)|src="([^"]+)"', readme.read_text(encoding='utf-8')):
+                value = next(x for x in target if x)
+                if value.startswith(('http:', 'https:', '#')):
+                    continue
+                self.assertTrue((readme.parent / value.split('#')[0]).exists(), (readme, value))
 
 
 if __name__ == '__main__':
