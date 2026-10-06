@@ -37,7 +37,7 @@ class CatalogTests(unittest.TestCase):
                              len(manifest['projects']))
             for project in manifest['projects']:
                 text = (ROOT / project['path'] / language).read_text(encoding='utf-8')
-                rows = [line for line in text.splitlines() if line.startswith('| <img ')]
+                rows = [line for line in text.splitlines() if line.startswith('| <img src="cards/')]
                 expected = [e for e in manifest['effects'] if e['project'] == project['id']]
                 if project.get('archive_name'):
                     self.assertIn('[' + project['archive_name'] + ']', text)
@@ -49,6 +49,12 @@ class CatalogTests(unittest.TestCase):
                     self.assertIn('/download/' + effect['name'] + '.zip', row)
                     self.assertIn('[' + effect['name'] + '.ZIP]', row)
                     self.assertEqual(len(row.split(' | ')), 6)
+                if project.get('controller'):
+                    controller_rows = [line for line in text.splitlines() if line.startswith('| <img src="controller/')]
+                    self.assertEqual(len(controller_rows), 1)
+                    self.assertIn(project['controller']['icon'], controller_rows[0])
+                    self.assertIn(project['controller']['installer'], controller_rows[0])
+                    self.assertEqual(len(controller_rows[0].split(' | ')), 6)
 
     def test_imported_user_descriptions_survive_generator(self):
         manifest = load(ROOT)
@@ -120,6 +126,8 @@ class CatalogTests(unittest.TestCase):
             with ZipFile(output / 'All_SYNTHESIS.ZIP') as archive:
                 self.assertIn('synthesis/SYNX2/SYNX2.ZDL', archive.namelist())
                 self.assertIn('synthesis/controller/windows/SYNTHESIS-SYNx2-0.1.2-Windows-x64-Setup.exe', archive.namelist())
+                self.assertIn('synthesis/controller/images/midi-controller.png', archive.namelist())
+                self.assertIn('synthesis/controller/images/app-icon.png', archive.namelist())
             self.assertTrue((output / 'SYNTHESIS-SYNx2-0.1.2-Windows-x64-Setup.exe').is_file())
             with ZipFile(output / 'All-ZDL-FX-test.zip') as archive:
                 self.assertIn('Zoom-ZDL-FX-test/catalog.json', archive.namelist())
