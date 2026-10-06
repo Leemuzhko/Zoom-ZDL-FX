@@ -40,7 +40,7 @@ icons inside `zdl/` and the downloadable effect packages are unchanged.
 | Type / Group | Project | Effects | Catalog / Description |
 | --- | --- | ---: | --- |
 | Filter (2) | HYBRID IR | 5 | [Catalog](zdl/filter/hybrid-ir/README.md) |
-| Filter (2) | DUAL IR loaders | 4 | [Catalog](zdl/filter/dual-ir/README.md) |
+| Filter (2) | DUAL IR loaders | 4 | [Catalog](zdl/filter/DUAL-IR/README.md) |
 | Drive (3) | Experimental NAM captures | 2 | [Catalog](zdl/drive/nam/README.md) |
 | GuitarAmp (4) | Modified Guitar Amps | 6 | [Catalog](zdl/guitar-amp/modified-amps/README.md) |
 | SFX (7) | SYNTHESIS SYNx2 | 1 | [Catalog](zdl/sfx/synthesis/README.md) |
@@ -109,12 +109,6 @@ Connect the Zoom device **before starting Zoom Effect Manager**, open the Effect
 See also: **[Zoom Effect Manager — Quick start](https://zoomeffectmanager.com/en/posts/quick-start/)**.
 
 Test one custom effect at a time in an otherwise simple patch before building a larger chain. Back up your existing effects/presets before experimenting.
-
-## IR loader note
-
-Some IR-loader variants can exceed the available DSP budget depending on IR length and the rest of the chain. If you hear crackling or other artifacts, use a shorter configuration or a lighter routing mode where the effect provides one.
-
-The DSP cost field used by experimental/custom effects should not be treated as a reliable CPU percentage.
 
 ## Build your own cabinet effects
 

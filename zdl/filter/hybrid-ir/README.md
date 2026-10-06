@@ -7,6 +7,12 @@ Complete effect packages for this project. Keep each ZDL, JSON and original imag
 
 [All projects](https://github.com/Leemuzhko/Zoom-ZDL-FX)
 
+## IR loader note
+
+Some IR-loader variants can exceed the available DSP budget depending on IR length and the rest of the chain. If you hear crackling or other artifacts, use a shorter configuration or a lighter routing mode where the effect provides one.
+
+The DSP cost field used by experimental/custom effects should not be treated as a reliable CPU percentage.
+
 <!-- BEGIN GENERATED EFFECT CATALOG -->
 
 | Effect Card | Effect Description | Effect Group | ID | Version | File Name | Download |

@@ -7,6 +7,10 @@ Complete effect packages for this project. Keep each ZDL, JSON and original imag
 
 [All projects](https://github.com/Leemuzhko/Zoom-ZDL-FX)
 
+## DSP budget and chain limit
+
+The DSP cost reported for the NAM effects in this project is not accurate and does not represent the available processor budget. These packages require a chain containing only one effect: the NAM effect itself. Do not add a second NAM instance or any other effect to the chain, even if the displayed DSP cost suggests spare capacity.
+
 <!-- BEGIN GENERATED EFFECT CATALOG -->
 
 | Effect Card | Effect Description | Effect Group | ID | Version | File Name | Download |

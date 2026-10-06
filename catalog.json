@@ -12,7 +12,7 @@
       "id": "dual-ir",
       "type": "filter",
       "title": "DUAL IR loaders",
-      "path": "zdl/filter/dual-ir",
+      "path": "zdl/filter/DUAL-IR",
       "title_ru": "Загрузчики DUAL IR"
     },
     {
@@ -77,7 +77,7 @@
     {
       "name": "IRDUAL4",
       "project": "dual-ir",
-      "path": "zdl/filter/dual-ir/IRDUAL4",
+      "path": "zdl/filter/DUAL-IR/IRDUAL4",
       "description": {
         "en": "DUAL IR loader with 4x2048 taps IR bank. Experimental.",
         "ru": "Загрузчик DUAL IR с банком IR 4×2048 отсчётов. Экспериментальный."
@@ -86,7 +86,7 @@
     {
       "name": "M1960VT1",
       "project": "dual-ir",
-      "path": "zdl/filter/dual-ir/M1960VT1",
+      "path": "zdl/filter/DUAL-IR/M1960VT1",
       "description": {
         "en": "DUAL IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960V cab",
         "ru": "Загрузчик DUAL IR с банком IR 4×2048 отсчётов. Экспериментальный. На основе кабинета Marshall 1960V."
@@ -95,7 +95,7 @@
     {
       "name": "M1960VT2",
       "project": "dual-ir",
-      "path": "zdl/filter/dual-ir/M1960VT2",
+      "path": "zdl/filter/DUAL-IR/M1960VT2",
       "description": {
         "en": "DUAL IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960V cab",
         "ru": "Загрузчик DUAL IR с банком IR 4×2048 отсчётов. Экспериментальный. На основе кабинета Marshall 1960V."
@@ -113,7 +113,7 @@
     {
       "name": "MS1960VS",
       "project": "dual-ir",
-      "path": "zdl/filter/dual-ir/MS1960VS",
+      "path": "zdl/filter/DUAL-IR/MS1960VS",
       "description": {
         "en": "DUAL IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960V with SS amp",
         "ru": "Загрузчик DUAL IR с банком IR 4×2048 отсчётов. Экспериментальный. На основе Marshall 1960V с транзисторным усилителем."
