@@ -19,8 +19,8 @@ SYNX2 использует ID915, как тестовый SYN11A: ставить
 
 <!-- BEGIN GENERATED EFFECT CATALOG -->
 
-| Карточка эффекта | Описание эффекта | Группа | ID | Версия | Имя файла | Скачать |
-| --- | --- | --- | --- | --- | --- | --- |
-| <img src="cards/SYNX2.png" alt="SYNTHESIS 2xOSC+LFO" width="128" height="96"> | SYNTHESIS — синтезатор с двумя осцилляторами, огибающей и LFO. | SFX (7) | 915 | 0.11 | `SYNX2.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/SYNX2.zip) |
+| Карточка эффекта | Описание эффекта | Группа | ID | Версия | Скачать |
+| --- | --- | --- | --- | --- | --- |
+| <img src="cards/SYNX2.png" alt="SYNTHESIS 2xOSC+LFO" width="128" height="96"> | SYNTHESIS — синтезатор с двумя осцилляторами, огибающей и LFO. | SFX (7) | 915 | 0.11 | [SYNX2.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/SYNX2.zip) |
 
 <!-- END GENERATED EFFECT CATALOG -->

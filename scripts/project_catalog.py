@@ -74,15 +74,15 @@ def render(root):
             title = project.get('title_ru', project['title']) if lang == 'ru' else project['title']
             label = 'Каталог' if lang == 'ru' else 'Catalog'
             index.append(f'| {group} ({gid}) | {title} | {len(effects)} | [{label}]({project["path"]}/{filename}) |')
-            rows = [('| Effect Card | Effect Description | Effect Group | ID | Version | File Name | Download |' if lang == 'en'
-                     else '| Карточка эффекта | Описание эффекта | Группа | ID | Версия | Имя файла | Скачать |'),
-                    '| --- | --- | --- | --- | --- | --- | --- |']
+            rows = [('| Effect Card | Effect Description | Effect Group | ID | Version | Download |' if lang == 'en'
+                     else '| Карточка эффекта | Описание эффекта | Группа | ID | Версия | Скачать |'),
+                    '| --- | --- | --- | --- | --- | --- |']
             for effect in effects:
                 rows.append('| ' + ' | '.join([
                     f'<img src="cards/{effect["name"]}.png" alt="{html.escape(effect["meta"]["name"], quote=True)}" width="128" height="96">',
                     cell(effect['description'][lang]), f'{group} ({gid})', str(effect['effect_id']),
-                    effect['version'], '`' + effect['filename'] + '`',
-                    f'[ZIP]({RELEASE}{effect["name"]}.zip)']) + ' |')
+                    effect['version'],
+                    f'[{effect["name"]}.ZIP]({RELEASE}{effect["name"]}.zip)']) + ' |')
                 with Image.open(root / effect['path'] / effect['meta']['iconFile']) as source:
                     rgba = source.convert('RGBA')
                     white = Image.new('RGBA', rgba.size, (255, 255, 255, 255))

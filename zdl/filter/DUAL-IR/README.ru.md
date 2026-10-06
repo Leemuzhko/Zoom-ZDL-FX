@@ -15,11 +15,11 @@
 
 <!-- BEGIN GENERATED EFFECT CATALOG -->
 
-| Карточка эффекта | Описание эффекта | Группа | ID | Версия | Имя файла | Скачать |
-| --- | --- | --- | --- | --- | --- | --- |
-| <img src="cards/IRDUAL4.png" alt="IRDUAL4" width="128" height="96"> | Загрузчик DUAL IR с банком IR 4×2048 отсчётов. Экспериментальный. | Filter (2) | 552 | 1.00 | `IRDUAL4.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/IRDUAL4.zip) |
-| <img src="cards/MS1960VS.png" alt="MS1960VS" width="128" height="96"> | Загрузчик DUAL IR с банком IR 4×2048 отсчётов. Экспериментальный. На основе Marshall 1960V с транзисторным усилителем. | Filter (2) | 554 | 1.00 | `MS1960VS.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960VS.zip) |
-| <img src="cards/M1960VT1.png" alt="M1960VT1" width="128" height="96"> | Загрузчик DUAL IR с банком IR 4×2048 отсчётов. Экспериментальный. На основе кабинета Marshall 1960V. | Filter (2) | 555 | 1.00 | `M1960VT1.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/M1960VT1.zip) |
-| <img src="cards/M1960VT2.png" alt="M1960VT2" width="128" height="96"> | Загрузчик DUAL IR с банком IR 4×2048 отсчётов. Экспериментальный. На основе кабинета Marshall 1960V. | Filter (2) | 556 | 1.00 | `M1960VT2.ZDL` | [ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/M1960VT2.zip) |
+| Карточка эффекта | Описание эффекта | Группа | ID | Версия | Скачать |
+| --- | --- | --- | --- | --- | --- |
+| <img src="cards/IRDUAL4.png" alt="IRDUAL4" width="128" height="96"> | Загрузчик DUAL IR с банком IR 4×2048 отсчётов. Экспериментальный. | Filter (2) | 552 | 1.00 | [IRDUAL4.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/IRDUAL4.zip) |
+| <img src="cards/MS1960VS.png" alt="MS1960VS" width="128" height="96"> | Загрузчик DUAL IR с банком IR 4×2048 отсчётов. Экспериментальный. На основе Marshall 1960V с транзисторным усилителем. | Filter (2) | 554 | 1.00 | [MS1960VS.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/MS1960VS.zip) |
+| <img src="cards/M1960VT1.png" alt="M1960VT1" width="128" height="96"> | Загрузчик DUAL IR с банком IR 4×2048 отсчётов. Экспериментальный. На основе кабинета Marshall 1960V. | Filter (2) | 555 | 1.00 | [M1960VT1.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/M1960VT1.zip) |
+| <img src="cards/M1960VT2.png" alt="M1960VT2" width="128" height="96"> | Загрузчик DUAL IR с банком IR 4×2048 отсчётов. Экспериментальный. На основе кабинета Marshall 1960V. | Filter (2) | 556 | 1.00 | [M1960VT2.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/M1960VT2.zip) |
 
 <!-- END GENERATED EFFECT CATALOG -->

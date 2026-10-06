@@ -45,7 +45,8 @@ class CatalogTests(unittest.TestCase):
                 for row, effect in zip(rows, expected):
                     self.assertIn(effect['description']['ru' if language.endswith('.ru.md') else 'en'], row)
                     self.assertIn('/download/' + effect['name'] + '.zip', row)
-                    self.assertEqual(len(row.split(' | ')), 7)
+                    self.assertIn('[' + effect['name'] + '.ZIP]', row)
+                    self.assertEqual(len(row.split(' | ')), 6)
 
     def test_imported_user_descriptions_survive_generator(self):
         manifest = load(ROOT)
