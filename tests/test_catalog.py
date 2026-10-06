@@ -47,8 +47,13 @@ class CatalogTests(unittest.TestCase):
 
     def test_imported_user_descriptions_survive_generator(self):
         manifest = load(ROOT)
+        ms1960 = next(e for e in manifest['effects'] if e['name'] == 'MS1960')
+        self.assertEqual(ms1960['project'], 'hybrid-ir')
+        self.assertEqual(ms1960['path'], 'zdl/filter/hybrid-ir/MS1960')
+        self.assertEqual({e['name'] for e in manifest['effects'] if e['project'] == 'dual-ir'},
+                         {'IRDUAL4', 'M1960VT1', 'M1960VT2', 'MS1960VS'})
         self.assertEqual(next(e for e in manifest['effects'] if e['name'] == 'IRDUAL4')['description']['en'],
-                         'Stereo IR loader with 4x2048 taps IR bank. Experimental.')
+                         'DUAL IR loader with 4x2048 taps IR bank. Experimental.')
         self.assertIn('Synthesator wit 2xOscillators',
                       next(e for e in manifest['effects'] if e['name'] == 'SYNX2')['description']['en'])
 

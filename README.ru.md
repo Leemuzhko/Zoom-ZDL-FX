@@ -37,13 +37,13 @@ MS-50G · MS-70G · MS-60B · G1on · G1Xon · B1on<br>
 
 <!-- BEGIN GENERATED EFFECT CATALOG -->
 
-| Type / Group | Project | Effects | Catalog / Description |
+| Тип / группа | Проект | Эффекты | Каталог / описание |
 | --- | --- | ---: | --- |
-| Filter (2) | HYBRID IR | 4 | [Catalog](zdl/filter/hybrid-ir/README.ru.md) |
-| Filter (2) | Stereo IR loaders | 5 | [Catalog](zdl/filter/stereo-ir/README.ru.md) |
-| Drive (3) | Experimental NAM captures | 2 | [Catalog](zdl/drive/nam/README.ru.md) |
-| GuitarAmp (4) | Modified Guitar Amps | 6 | [Catalog](zdl/guitar-amp/modified-amps/README.ru.md) |
-| SFX (7) | SYNTHESIS SYNx2 | 1 | [Catalog](zdl/sfx/synthesis/README.ru.md) |
+| Filter (2) | HYBRID IR | 5 | [Каталог](zdl/filter/hybrid-ir/README.ru.md) |
+| Filter (2) | Загрузчики DUAL IR | 4 | [Каталог](zdl/filter/dual-ir/README.ru.md) |
+| Drive (3) | Экспериментальные NAM-модели | 2 | [Каталог](zdl/drive/nam/README.ru.md) |
+| GuitarAmp (4) | Модифицированные гитарные усилители | 6 | [Каталог](zdl/guitar-amp/modified-amps/README.ru.md) |
+| SFX (7) | SYNTHESIS SYNx2 | 1 | [Каталог](zdl/sfx/synthesis/README.ru.md) |
 
 <!-- END GENERATED EFFECT CATALOG -->
 

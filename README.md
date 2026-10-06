@@ -39,8 +39,8 @@ icons inside `zdl/` and the downloadable effect packages are unchanged.
 
 | Type / Group | Project | Effects | Catalog / Description |
 | --- | --- | ---: | --- |
-| Filter (2) | HYBRID IR | 4 | [Catalog](zdl/filter/hybrid-ir/README.md) |
-| Filter (2) | Stereo IR loaders | 5 | [Catalog](zdl/filter/stereo-ir/README.md) |
+| Filter (2) | HYBRID IR | 5 | [Catalog](zdl/filter/hybrid-ir/README.md) |
+| Filter (2) | DUAL IR loaders | 4 | [Catalog](zdl/filter/dual-ir/README.md) |
 | Drive (3) | Experimental NAM captures | 2 | [Catalog](zdl/drive/nam/README.md) |
 | GuitarAmp (4) | Modified Guitar Amps | 6 | [Catalog](zdl/guitar-amp/modified-amps/README.md) |
 | SFX (7) | SYNTHESIS SYNx2 | 1 | [Catalog](zdl/sfx/synthesis/README.md) |

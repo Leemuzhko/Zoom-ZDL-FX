@@ -5,31 +5,36 @@
       "id": "hybrid-ir",
       "type": "filter",
       "title": "HYBRID IR",
-      "path": "zdl/filter/hybrid-ir"
+      "path": "zdl/filter/hybrid-ir",
+      "title_ru": "HYBRID IR"
     },
     {
-      "id": "stereo-ir",
+      "id": "dual-ir",
       "type": "filter",
-      "title": "Stereo IR loaders",
-      "path": "zdl/filter/stereo-ir"
+      "title": "DUAL IR loaders",
+      "path": "zdl/filter/dual-ir",
+      "title_ru": "Загрузчики DUAL IR"
     },
     {
       "id": "nam",
       "type": "drive",
       "title": "Experimental NAM captures",
-      "path": "zdl/drive/nam"
+      "path": "zdl/drive/nam",
+      "title_ru": "Экспериментальные NAM-модели"
     },
     {
       "id": "modified-amps",
       "type": "guitar-amp",
       "title": "Modified Guitar Amps",
-      "path": "zdl/guitar-amp/modified-amps"
+      "path": "zdl/guitar-amp/modified-amps",
+      "title_ru": "Модифицированные гитарные усилители"
     },
     {
       "id": "synthesis",
       "type": "sfx",
       "title": "SYNTHESIS SYNx2",
-      "path": "zdl/sfx/synthesis"
+      "path": "zdl/sfx/synthesis",
+      "title_ru": "SYNTHESIS SYNx2"
     }
   ],
   "effects": [
@@ -39,7 +44,7 @@
       "path": "zdl/filter/hybrid-ir/GJ_IR",
       "description": {
         "en": "HYBRID IR cabinet bank. IR slots: SM57, R121, MD421, C414.",
-        "ru": "HYBRID IR cabinet bank. IR slots: SM57, R121, MD421, C414."
+        "ru": "Банк кабинетов HYBRID IR. Слоты IR: SM57, R121, MD421, C414."
       }
     },
     {
@@ -48,7 +53,7 @@
       "path": "zdl/filter/hybrid-ir/HYBRIDIR",
       "description": {
         "en": "HYBRID IR Demo",
-        "ru": "HYBRID IR Demo"
+        "ru": "Демонстрационный эффект HYBRID IR."
       }
     },
     {
@@ -57,7 +62,7 @@
       "path": "zdl/filter/hybrid-ir/TRUCAB",
       "description": {
         "en": "HYBRID IR cabinet bank. IR slots: AMT112, AMT212, AMT412, YE112, 1960A, 1960B, ME212, ME412.",
-        "ru": "HYBRID IR cabinet bank. IR slots: AMT112, AMT212, AMT412, YE112, 1960A, 1960B, ME212, ME412."
+        "ru": "Банк кабинетов HYBRID IR. Слоты IR: AMT112, AMT212, AMT412, YE112, 1960A, 1960B, ME212, ME412."
       }
     },
     {
@@ -66,52 +71,52 @@
       "path": "zdl/filter/hybrid-ir/TRUCAB2",
       "description": {
         "en": "HYBRID IR cabinet bank. IR slots: AMT112, AMT212, AMT412, YE112, 1960A, 1960B, 412AV, 412AX.",
-        "ru": "HYBRID IR cabinet bank. IR slots: AMT112, AMT212, AMT412, YE112, 1960A, 1960B, 412AV, 412AX."
+        "ru": "Банк кабинетов HYBRID IR. Слоты IR: AMT112, AMT212, AMT412, YE112, 1960A, 1960B, 412AV, 412AX."
       }
     },
     {
       "name": "IRDUAL4",
-      "project": "stereo-ir",
-      "path": "zdl/filter/stereo-ir/IRDUAL4",
+      "project": "dual-ir",
+      "path": "zdl/filter/dual-ir/IRDUAL4",
       "description": {
-        "en": "Stereo IR loader with 4x2048 taps IR bank. Experimental.",
-        "ru": "Stereo IR loader with 4x2048 taps IR bank. Experimental."
+        "en": "DUAL IR loader with 4x2048 taps IR bank. Experimental.",
+        "ru": "Загрузчик DUAL IR с банком IR 4×2048 отсчётов. Экспериментальный."
       }
     },
     {
       "name": "M1960VT1",
-      "project": "stereo-ir",
-      "path": "zdl/filter/stereo-ir/M1960VT1",
+      "project": "dual-ir",
+      "path": "zdl/filter/dual-ir/M1960VT1",
       "description": {
-        "en": "Stereo IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960V cab",
-        "ru": "Stereo IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960V cab"
+        "en": "DUAL IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960V cab",
+        "ru": "Загрузчик DUAL IR с банком IR 4×2048 отсчётов. Экспериментальный. На основе кабинета Marshall 1960V."
       }
     },
     {
       "name": "M1960VT2",
-      "project": "stereo-ir",
-      "path": "zdl/filter/stereo-ir/M1960VT2",
+      "project": "dual-ir",
+      "path": "zdl/filter/dual-ir/M1960VT2",
       "description": {
-        "en": "Stereo IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960V cab",
-        "ru": "Stereo IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960V cab"
+        "en": "DUAL IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960V cab",
+        "ru": "Загрузчик DUAL IR с банком IR 4×2048 отсчётов. Экспериментальный. На основе кабинета Marshall 1960V."
       }
     },
     {
       "name": "MS1960",
-      "project": "stereo-ir",
-      "path": "zdl/filter/stereo-ir/MS1960",
+      "project": "hybrid-ir",
+      "path": "zdl/filter/hybrid-ir/MS1960",
       "description": {
-        "en": "Stereo IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960 A/AX/AV/B cabs",
-        "ru": "Stereo IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960 A/AX/AV/B cabs"
+        "en": "HYBRID IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960 A/AX/AV/B cabs",
+        "ru": "Загрузчик HYBRID IR с банком IR 4×2048 отсчётов. Экспериментальный. На основе кабинетов Marshall 1960 A/AX/AV/B."
       }
     },
     {
       "name": "MS1960VS",
-      "project": "stereo-ir",
-      "path": "zdl/filter/stereo-ir/MS1960VS",
+      "project": "dual-ir",
+      "path": "zdl/filter/dual-ir/MS1960VS",
       "description": {
-        "en": "Stereo IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960V with SS amp",
-        "ru": "Stereo IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960V with SS amp"
+        "en": "DUAL IR loader with 4x2048 taps IR bank. Experimental. Based on Marshall 1960V with SS amp",
+        "ru": "Загрузчик DUAL IR с банком IR 4×2048 отсчётов. Экспериментальный. На основе Marshall 1960V с транзисторным усилителем."
       }
     },
     {
@@ -120,7 +125,7 @@
       "path": "zdl/drive/nam/NAM5150",
       "description": {
         "en": "NAM 5150  - experimental",
-        "ru": "NAM 5150  - experimental"
+        "ru": "NAM 5150 — экспериментальный."
       }
     },
     {
@@ -129,7 +134,7 @@
       "path": "zdl/drive/nam/NAMPLEX",
       "description": {
         "en": "NAM PLEXI - experimental",
-        "ru": "NAM PLEXI - experimental"
+        "ru": "NAM PLEXI — экспериментальный."
       }
     },
     {
@@ -138,7 +143,7 @@
       "path": "zdl/guitar-amp/modified-amps/CABSIM",
       "description": {
         "en": "CABSIM - Flattened Amp model based on the FD COMBO with custom cab",
-        "ru": "CABSIM - Flattened Amp model based on the FD COMBO with custom cab"
+        "ru": "CABSIM — выровненная модель усилителя на основе FD COMBO с собственным кабинетом."
       }
     },
     {
@@ -147,7 +152,7 @@
       "path": "zdl/guitar-amp/modified-amps/ENGL",
       "description": {
         "en": "ENGL - based on ALIEN with custom cab and visuals",
-        "ru": "ENGL - based on ALIEN with custom cab and visuals"
+        "ru": "ENGL — на основе ALIEN с собственным кабинетом."
       }
     },
     {
@@ -156,7 +161,7 @@
       "path": "zdl/guitar-amp/modified-amps/ENGL2",
       "description": {
         "en": "ENGL2 - based on ALIEN with custom cab",
-        "ru": "ENGL2 - based on ALIEN with custom cab"
+        "ru": "ENGL2 — на основе ALIEN с собственным кабинетом."
       }
     },
     {
@@ -165,7 +170,7 @@
       "path": "zdl/guitar-amp/modified-amps/JCM800",
       "description": {
         "en": "JCM800 - based on MS CRUNCH with custom cab and visuals",
-        "ru": "JCM800 - based on MS CRUNCH with custom cab and visuals"
+        "ru": "JCM800 — на основе MS CRUNCH с собственным кабинетом и оформлением."
       }
     },
     {
@@ -174,7 +179,7 @@
       "path": "zdl/guitar-amp/modified-amps/PLEXI",
       "description": {
         "en": "PLEXI - based on MS 1959 with custom cab and visuals",
-        "ru": "PLEXI - based on MS 1959 with custom cab and visuals"
+        "ru": "PLEXI — на основе MS 1959 с собственным кабинетом и оформлением."
       }
     },
     {
@@ -183,7 +188,7 @@
       "path": "zdl/guitar-amp/modified-amps/PLEXI2",
       "description": {
         "en": "Marshall PLEXI - based on MS 1959 with custom cab and visuals",
-        "ru": "Marshall PLEXI - based on MS 1959 with custom cab and visuals"
+        "ru": "Marshall PLEXI — на основе MS 1959 с собственным кабинетом и оформлением."
       }
     },
     {
@@ -192,7 +197,7 @@
       "path": "zdl/sfx/synthesis/SYNX2",
       "description": {
         "en": "SYNTHESIS - Synthesator wit 2xOscillators, Envelope and LFO.",
-        "ru": "SYNTHESIS - Synthesator wit 2xOscillators, Envelope and LFO."
+        "ru": "SYNTHESIS — синтезатор с двумя осцилляторами, огибающей и LFO."
       }
     }
   ]

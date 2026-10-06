@@ -64,13 +64,17 @@ def render(root):
     manifest = load(root)
     outputs = {}
     for lang, filename in [('en', 'README.md'), ('ru', 'README.ru.md')]:
-        index = ['| Type / Group | Project | Effects | Catalog / Description |',
+        index = [('| Type / Group | Project | Effects | Catalog / Description |' if lang == 'en'
+                  else '| Тип / группа | Проект | Эффекты | Каталог / описание |'),
                  '| --- | --- | ---: | --- |']
         for project in manifest['projects']:
             effects = [e for e in manifest['effects'] if e['project'] == project['id']]
             gid, group = GROUPS[project['type']]
-            index.append(f'| {group} ({gid}) | {project["title"]} | {len(effects)} | [Catalog]({project["path"]}/{filename}) |')
-            rows = ['| Effect Card | Effect Description | Effect Group | ID | Version | File Name | Download |',
+            title = project.get('title_ru', project['title']) if lang == 'ru' else project['title']
+            label = 'Каталог' if lang == 'ru' else 'Catalog'
+            index.append(f'| {group} ({gid}) | {title} | {len(effects)} | [{label}]({project["path"]}/{filename}) |')
+            rows = [('| Effect Card | Effect Description | Effect Group | ID | Version | File Name | Download |' if lang == 'en'
+                     else '| Карточка эффекта | Описание эффекта | Группа | ID | Версия | Имя файла | Скачать |'),
                     '| --- | --- | --- | --- | --- | --- | --- |']
             for effect in effects:
                 rows.append('| ' + ' | '.join([
