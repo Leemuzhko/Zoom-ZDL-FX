@@ -23,7 +23,9 @@ screen keyboard do not require LoopBe1. Avoid MIDI Thru feedback loops.
 
 LoopBe1 is not bundled. Personal non-commercial use and bundling permission are
 different terms; see [vendor licensing](https://nerds.de/en/loopbe1.html).
-Permission to include the driver has not been granted.
+Written permission for the described free non-commercial bundling was received
+on 2026-10-06. The current package still installs it separately.
+[Permission record and Windows 11 native Loopback findings](MIDI_ROUTING.md).
 
 The installer is copied byte-for-byte from validated controller version 0.1.2.
 Host tests, frozen/installed application smoke, install/uninstall and explicit
