@@ -12,7 +12,7 @@ from zipfile import ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from project_catalog import load, render
+from project_catalog import load, render, matches
 from package_release import build
 
 
@@ -28,7 +28,7 @@ class CatalogTests(unittest.TestCase):
 
     def test_generated_catalogues_are_current_and_root_is_bounded(self):
         for file, content in render(ROOT).items():
-            self.assertEqual(file.read_bytes(), content, str(file))
+            self.assertTrue(matches(file, content), str(file))
         manifest = load(ROOT)
         for language in ('README.md', 'README.ru.md'):
             root = (ROOT / language).read_text(encoding='utf-8')
@@ -73,6 +73,20 @@ class CatalogTests(unittest.TestCase):
                     ROOT / projects[effect['project']]['path'] / 'cards' / (effect['name'] + '.png')) as card:
                 self.assertEqual(source.size, card.size)
                 self.assertEqual(card.convert('RGBA').getchannel('A').getextrema(), (255, 255))
+
+    def test_preview_check_accepts_new_compression_but_rejects_changed_pixels(self):
+        from io import BytesIO
+        from PIL import Image
+        path = ROOT / 'zdl/sfx/synthesis/cards/SYNX2.png'
+        with Image.open(path) as image:
+            same = BytesIO()
+            image.save(same, format='PNG', compress_level=0)
+            self.assertTrue(matches(path, same.getvalue()))
+            altered = image.copy()
+            altered.putpixel((0, 0), (0, 0, 0))
+            different = BytesIO()
+            altered.save(different, format='PNG')
+            self.assertFalse(matches(path, different.getvalue()))
 
     def test_release_archives_preserve_single_effect_names_and_bundle_controller(self):
         with tempfile.TemporaryDirectory() as directory:

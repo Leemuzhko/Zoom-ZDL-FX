@@ -91,6 +91,17 @@ def render(root):
     return outputs
 
 
+def matches(path, content):
+    if not path.is_file():
+        return False
+    if path.suffix == '.png':
+        # Pillow/zlib compression may differ by platform/version; compare the
+        # actual white-matte image, not its incidental PNG encoding.
+        with Image.open(path) as current, Image.open(BytesIO(content)) as expected:
+            return current.mode == expected.mode and current.size == expected.size and current.tobytes() == expected.tobytes()
+    return path.read_bytes() == content
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--root', type=Path, default=Path(__file__).resolve().parents[1])
@@ -98,7 +109,7 @@ def main():
     args = parser.parse_args()
     outputs = render(args.root.resolve())
     if args.check:
-        stale = [str(p) for p, content in outputs.items() if not p.exists() or p.read_bytes() != content]
+        stale = [str(p) for p, content in outputs.items() if not matches(p, content)]
         if stale:
             parser.exit(1, 'Stale catalogues: ' + ', '.join(stale) + '\n')
     else:
