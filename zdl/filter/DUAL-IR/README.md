@@ -15,6 +15,8 @@ The DSP cost field used by experimental/custom effects should not be treated as 
 
 <!-- BEGIN GENERATED EFFECT CATALOG -->
 
+**Download all effects in this project: [All_DUAL_IR.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/All_DUAL_IR.ZIP)**
+
 | Effect Card | Effect Description | Effect Group | ID | Version | Download |
 | --- | --- | --- | --- | --- | --- |
 | <img src="cards/IRDUAL4.png" alt="IRDUAL4" width="128" height="96"> | DUAL IR loader with 4x2048 taps IR bank. Experimental. | Filter (2) | 552 | 1.00 | [IRDUAL4.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/IRDUAL4.zip) |

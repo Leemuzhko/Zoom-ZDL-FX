@@ -9,6 +9,8 @@
 
 <!-- BEGIN GENERATED EFFECT CATALOG -->
 
+**Скачать все эффекты проекта: [All_MODIFIED_AMPS.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/All_MODIFIED_AMPS.ZIP)**
+
 | Карточка эффекта | Описание эффекта | Группа | ID | Версия | Скачать |
 | --- | --- | --- | --- | --- | --- |
 | <img src="cards/ENGL.png" alt="ENGL" width="128" height="96"> | ENGL — на основе ALIEN с собственным кабинетом. | GuitarAmp (4) | 337 | 1.00 | [ENGL.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/ENGL.zip) |

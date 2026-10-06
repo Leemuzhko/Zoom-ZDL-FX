@@ -26,9 +26,14 @@ def build(root, destination, version):
     for effect in manifest['effects']:
         archive(destination / (effect['name'] + '.zip'), root / effect['path'], effect['name'])
     for project in manifest['projects']:
-        project_zip = (destination / (project['id'] + '-project.zip')).resolve()
+        project_zip = (destination / project.get('archive_name', project['id'] + '-project.zip')).resolve()
         if project_zip.parent != destination.resolve():
             raise ValueError('Invalid project archive path')
+        legacy_zip = (destination / (project['id'] + '-project.zip')).resolve()
+        if legacy_zip.parent != destination.resolve():
+            raise ValueError('Invalid legacy archive path')
+        if legacy_zip != project_zip:
+            legacy_zip.unlink(missing_ok=True)
         if project.get('archive', True):
             archive(project_zip, root / project['path'], project['id'])
         else:

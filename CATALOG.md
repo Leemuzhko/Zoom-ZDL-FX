@@ -27,9 +27,9 @@ python scripts/package_release.py --version preview
 ```
 
 Packaging uses the validated manifest, retaining previous `<effect>.zip` names,
-and adds `<project>-project.zip` for projects with archive enabled and
-`All-ZDL-FX-<version>.zip`. SYNTHESIS has no separate project archive: the effect
-and controller are downloaded separately or as part of the full collection.
+and adds `All_<PROJECT>.ZIP` for projects with archive enabled and
+`All-ZDL-FX-<version>.zip`. All_SYNTHESIS.ZIP includes the effect, controller and instructions; all are
+also included in the full collection.
 EXE, guide and receipt are attached separately. LoopBe1 is external. `tests/package-baseline.json` records
 pre-migration package hashes.
 

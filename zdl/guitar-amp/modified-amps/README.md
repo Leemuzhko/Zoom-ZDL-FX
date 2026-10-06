@@ -9,6 +9,8 @@ Complete effect packages for this project. Keep each ZDL, JSON and original imag
 
 <!-- BEGIN GENERATED EFFECT CATALOG -->
 
+**Download all effects in this project: [All_MODIFIED_AMPS.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/All_MODIFIED_AMPS.ZIP)**
+
 | Effect Card | Effect Description | Effect Group | ID | Version | Download |
 | --- | --- | --- | --- | --- | --- |
 | <img src="cards/ENGL.png" alt="ENGL" width="128" height="96"> | ENGL - based on ALIEN with custom cab and visuals | GuitarAmp (4) | 337 | 1.00 | [ENGL.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/ENGL.zip) |

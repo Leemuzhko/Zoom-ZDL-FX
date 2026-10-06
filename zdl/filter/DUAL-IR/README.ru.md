@@ -15,6 +15,8 @@
 
 <!-- BEGIN GENERATED EFFECT CATALOG -->
 
+**Скачать все эффекты проекта: [All_DUAL_IR.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/All_DUAL_IR.ZIP)**
+
 | Карточка эффекта | Описание эффекта | Группа | ID | Версия | Скачать |
 | --- | --- | --- | --- | --- | --- |
 | <img src="cards/IRDUAL4.png" alt="IRDUAL4" width="128" height="96"> | Загрузчик DUAL IR с банком IR 4×2048 отсчётов. Экспериментальный. | Filter (2) | 552 | 1.00 | [IRDUAL4.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/IRDUAL4.zip) |

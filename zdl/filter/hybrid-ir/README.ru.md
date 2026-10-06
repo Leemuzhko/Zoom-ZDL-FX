@@ -15,6 +15,8 @@
 
 <!-- BEGIN GENERATED EFFECT CATALOG -->
 
+**Скачать все эффекты проекта: [All_HYBRID_IR.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/All_HYBRID_IR.ZIP)**
+
 | Карточка эффекта | Описание эффекта | Группа | ID | Версия | Скачать |
 | --- | --- | --- | --- | --- | --- |
 | <img src="cards/HYBRIDIR.png" alt="HYBRIDIR" width="128" height="96"> | Демонстрационный эффект HYBRID IR. | Filter (2) | 565 | 1.00 | [HYBRIDIR.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/HYBRIDIR.zip) |

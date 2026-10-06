@@ -13,6 +13,8 @@
 
 <!-- BEGIN GENERATED EFFECT CATALOG -->
 
+**Скачать все эффекты проекта: [All_NAM.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/All_NAM.ZIP)**
+
 | Карточка эффекта | Описание эффекта | Группа | ID | Версия | Скачать |
 | --- | --- | --- | --- | --- | --- |
 | <img src="cards/NAMPLEX.png" alt="NAMPLEX" width="128" height="96"> | NAM PLEXI — экспериментальный. | Drive (3) | 580 | 1.00 | [NAMPLEX.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/NAMPLEX.zip) |

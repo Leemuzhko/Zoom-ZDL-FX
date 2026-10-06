@@ -13,6 +13,8 @@ The DSP cost reported for the NAM effects in this project is not accurate and do
 
 <!-- BEGIN GENERATED EFFECT CATALOG -->
 
+**Download all effects in this project: [All_NAM.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/All_NAM.ZIP)**
+
 | Effect Card | Effect Description | Effect Group | ID | Version | Download |
 | --- | --- | --- | --- | --- | --- |
 | <img src="cards/NAMPLEX.png" alt="NAMPLEX" width="128" height="96"> | NAM PLEXI - experimental | Drive (3) | 580 | 1.00 | [NAMPLEX.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/NAMPLEX.zip) |

@@ -24,6 +24,8 @@ Save any settings you want to keep manually.
 
 <!-- BEGIN GENERATED EFFECT CATALOG -->
 
+**Download all effects in this project: [All_SYNTHESIS.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/All_SYNTHESIS.ZIP)**
+
 | Effect Card | Effect Description | Effect Group | ID | Version | Download |
 | --- | --- | --- | --- | --- | --- |
 | <img src="cards/SYNX2.png" alt="SYNTHESIS 2xOSC+LFO" width="128" height="96"> | SYNTHESIS - Synthesator wit 2xOscillators, Envelope and LFO. | SFX (7) | 915 | 0.11 | [SYNX2.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/SYNX2.zip) |
