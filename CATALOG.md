@@ -33,5 +33,8 @@ also included in the full collection.
 EXE, guide and receipt are attached separately. LoopBe1 is external. `tests/package-baseline.json` records
 pre-migration package hashes.
 
-PRs validate catalogues, hashes and archives and produce workflow artifacts.
-Only a `v*` tag publishes a Release.
+Validate catalogue changes locally with the commands above, or start the workflow
+manually on a branch to produce workflow artifacts. Pull requests and ordinary
+branch pushes do not launch GitHub Actions automatically. Tags matching `v*`
+automatically validate and package the collection and publish a Release.
+Manual dispatch on a tag also runs the release job.

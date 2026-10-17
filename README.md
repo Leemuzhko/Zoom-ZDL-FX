@@ -125,7 +125,7 @@ A repository tag matching `v*` (for example `v1.0.0`) creates:
 - the standalone SYNTHESIS Windows installer and DAW guide;
 - one complete collection ZIP: `All-ZDL-FX-<version>.zip`.
 
-The workflow can also be started manually from GitHub Actions to build the same ZIPs as workflow artifacts without publishing a Release.
+The workflow can also be started manually on a branch from GitHub Actions to build the same ZIPs as workflow artifacts without publishing a Release. Manual dispatch on a tag also runs the release job. Pull requests and ordinary branch pushes do not start Actions automatically.
 
 ## Support the project
 

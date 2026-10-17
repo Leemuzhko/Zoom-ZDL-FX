@@ -1,6 +1,5 @@
 name: Validate and package ZDL release
 on:
-  pull_request:
   push:
     tags: ["v*"]
   workflow_dispatch:
