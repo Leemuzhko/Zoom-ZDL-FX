@@ -3,7 +3,7 @@
 </p>
 
 <p align="center"><strong>Ready-to-use custom effects for the original Zoom MS-series ZDL platform.</strong><br>
-Amp models, cabinet effects and IR-based experiments collected in one place.</p>
+Amp models, cabinet effects, synthesizers and games collected in one place.</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Format-ZDL-475569?style=flat-square" alt="Format: ZDL">
@@ -16,7 +16,7 @@ Amp models, cabinet effects and IR-based experiments collected in one place.</p>
 
 <p align="center"><strong>Target devices:</strong><br>
 MS-50G · MS-70CDR · MS-60B · G1on · G1Xon · B1on<br>
-<sub>Compatibility target for this repository. Individual effects may not be hardware-tested on every listed model.</sub></p>
+<sub>Compatibility varies by effect. Check each project's model-specific notes before installing.</sub></p>
 
 <h3 align="center"><a href="https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest">Download all effects</a></h3>
 
@@ -26,7 +26,7 @@ MS-50G · MS-70CDR · MS-60B · G1on · G1Xon · B1on<br>
 
 This repository is my collection of finished, working ZDL effects for the legacy/original Zoom MS-series ecosystem. It is intended for users who want ready-made effects without building them from source.
 
-Development is ongoing. The target device family is **MS-50G / MS-70G / MS-60B / G1on / G1Xon / B1on**. Hardware behavior can depend on the exact pedal, firmware, effect chain and DSP load, so treat every custom ZDL as experimental and test it carefully.
+Development is ongoing. The target device family is **MS-50G / MS-70CDR / MS-60B / G1on / G1Xon / B1on**. Hardware behavior can depend on the exact pedal, firmware, effect chain and DSP load, so treat every custom ZDL as experimental and test it carefully.
 
 ## Effects
 
@@ -44,6 +44,7 @@ icons inside `zdl/` and the downloadable effect packages are unchanged.
 | Drive (3) | Experimental NAM captures | 2 | [Catalog](zdl/drive/nam/README.md) |
 | GuitarAmp (4) | Modified Guitar Amps | 6 | [Catalog](zdl/guitar-amp/modified-amps/README.md) |
 | SFX (7) | SYNTHESIS SYNx2 | 1 | [Catalog](zdl/sfx/synthesis/README.md) |
+| PedalOperated (11) | Games | 1 | [Catalog](zdl/pedal-operated/games/README.md) |
 
 <!-- END GENERATED EFFECT CATALOG -->
 
@@ -55,6 +56,14 @@ a `All_<PROJECT>.ZIP` release package. [Catalogue maintenance](CATALOG.md).
 ### SYNTHESIS SYNx2 + MIDI controller
 
 [Effect, Windows installer and DAW instructions](zdl/sfx/synthesis/README.md).
+
+### DINO RUN — a game on your Zoom pedal
+
+[LM_DINO: instructions, compatibility and downloads](zdl/pedal-operated/games/README.md).
+
+Tested on **MS-70CDR**. **MS-50G / MS-60B** may work but remain untested.
+The **G1on / B1on family does not run this game**; the author reports no harm
+to the pedal.
 
 <a id="installation"></a>
 
