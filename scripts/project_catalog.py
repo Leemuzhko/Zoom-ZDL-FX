@@ -10,7 +10,8 @@ from PIL import Image
 BEGIN = '<!-- BEGIN GENERATED EFFECT CATALOG -->'
 END = '<!-- END GENERATED EFFECT CATALOG -->'
 GROUPS = {'filter': (2, 'Filter'), 'drive': (3, 'Drive'),
-          'guitar-amp': (4, 'GuitarAmp'), 'sfx': (7, 'SFX')}
+          'guitar-amp': (4, 'GuitarAmp'), 'sfx': (7, 'SFX'),
+          'pedal-operated': (11, 'PedalOperated')}
 RELEASE = 'https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/'
 
 
