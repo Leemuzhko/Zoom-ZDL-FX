@@ -2,6 +2,6 @@
   "name": "DINO RUN",
   "inDeviceFileName": "LM_DINO.ZDL",
   "iconFile": "LM_DINO.png",
-  "descriptionEng": "A one-button dinosaur runner inspired by the Chrome game. Tap the footswitch to start, jump or restart. Sound and high score are saved per preset; leaving the game screen pauses play. Tested on MS-70CDR. MS-50G/MS-60B may work, but remain untested. Does not work on the G1on/B1on family; the author reports no harm to the pedal.",
-  "descriptionRus": "Динозавр-раннер по мотивам игры из Chrome. Короткое нажатие футсвича — старт, прыжок или новая попытка. Звук и рекорд сохраняются в пресете; вне игрового экрана игра на паузе. Протестировано на MS-70CDR. На MS-50G/MS-60B запуск возможен, но пока не проверен. На семействе G1on/B1on не работает; по сообщению автора, вреда педали не наносит."
+  "descriptionEng": "A one-button dinosaur runner inspired by the Chrome game. Tap the footswitch to start, jump or restart. Sound and high score are saved per preset; leaving the game screen pauses play. Requires MS-70CDR firmware: works on MS-70CDR and on MS-50G/MS-60B running that firmware. Does not work with native MS-50G/MS-60B firmware or on the G1on/B1on family. The author reports no harm to G1on/B1on pedals.",
+  "descriptionRus": "Динозавр-раннер по мотивам игры из Chrome. Короткое нажатие футсвича — старт, прыжок или новая попытка. Звук и рекорд сохраняются в пресете; вне игрового экрана игра на паузе. Требуется прошивка MS-70CDR: работает на MS-70CDR и на MS-50G/MS-60B с этой прошивкой. С родными прошивками MS-50G/MS-60B и на семействе G1on/B1on не работает. По сообщению автора, вреда педалям G1on/B1on не наносит."
 }

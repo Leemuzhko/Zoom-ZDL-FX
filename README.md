@@ -61,9 +61,10 @@ a `All_<PROJECT>.ZIP` release package. [Catalogue maintenance](CATALOG.md).
 
 [LM_DINO: instructions, compatibility and downloads](zdl/pedal-operated/games/README.md).
 
-Tested on **MS-70CDR**. **MS-50G / MS-60B** may work but remain untested.
-The **G1on / B1on family does not run this game**; the author reports no harm
-to the pedal.
+Requires **MS-70CDR firmware**. Works on **MS-70CDR** and on **MS-50G / MS-60B
+running MS-70CDR firmware**. Does **not** work with native **MS-50G / MS-60B
+firmware** or on the **G1on / B1on family**. The author reports no harm to
+G1on/B1on pedals.
 
 <a id="installation"></a>
 

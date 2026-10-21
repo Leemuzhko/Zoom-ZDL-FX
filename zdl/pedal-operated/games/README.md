@@ -15,13 +15,15 @@ your preset's high score.
 
 ### Compatibility
 
-| Pedal | Status |
-| --- | --- |
-| **Original MS-70CDR** | **Tested and working.** |
-| **MS-50G / MS-60B** | May work; compatibility has not been tested. |
-| **G1on / B1on family** | **Does not work.** The author reports no harm to the pedal. |
+| Pedal | Installed firmware | Status |
+| --- | --- | --- |
+| **Original MS-70CDR** | MS-70CDR | **Tested and working.** |
+| **MS-50G / MS-60B** | **MS-70CDR firmware** | **Works.** |
+| **MS-50G / MS-60B** | Native MS-50G / MS-60B firmware | **Does not work.** |
+| **G1on / B1on family** | Native firmware | **Does not work.** The author reports no harm to the pedal. |
 
-Compatibility information reflects the author's hardware report.
+This version requires **MS-70CDR firmware**. Compatibility information reflects
+the author's hardware report, updated **2026-10-21**.
 
 ### Playing and saving
 
@@ -55,6 +57,6 @@ with Google or Zoom Corporation.
 
 | Effect Card | Effect Description | Effect Group | ID | Version | Download |
 | --- | --- | --- | --- | --- | --- |
-| <img src="cards/LM_DINO.png" alt="DINO RUN" width="128" height="96"> | DINO RUN — a footswitch-controlled dinosaur runner with saved Sound and a per-preset high score. Tested on MS-70CDR. MS-50G/MS-60B may work, but remain untested. Does not work on the G1on/B1on family; the author reports no harm to the pedal. | PedalOperated (11) | 13311 | 1.00 | [LM_DINO.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/LM_DINO.zip) |
+| <img src="cards/LM_DINO.png" alt="DINO RUN" width="128" height="96"> | DINO RUN — a footswitch-controlled dinosaur runner with saved Sound and a per-preset high score. Requires MS-70CDR firmware: works on MS-70CDR and on MS-50G/MS-60B running that firmware. Does not work with native MS-50G/MS-60B firmware or on the G1on/B1on family. The author reports no harm to G1on/B1on pedals. | PedalOperated (11) | 13311 | 1.00 | [LM_DINO.ZIP](https://github.com/Leemuzhko/Zoom-ZDL-FX/releases/latest/download/LM_DINO.zip) |
 
 <!-- END GENERATED EFFECT CATALOG -->

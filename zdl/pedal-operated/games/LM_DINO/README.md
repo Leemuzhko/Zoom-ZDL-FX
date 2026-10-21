@@ -10,13 +10,15 @@ high score — with one footswitch.
 
 ## Compatibility
 
-| Pedal | Status |
-| --- | --- |
-| **Original MS-70CDR** | **Tested and working.** |
-| **MS-50G / MS-60B** | May work; compatibility has not been tested. |
-| **G1on / B1on family** | **Does not work.** The author reports no harm to the pedal. |
+| Pedal | Installed firmware | Status |
+| --- | --- | --- |
+| **Original MS-70CDR** | MS-70CDR | **Tested and working.** |
+| **MS-50G / MS-60B** | **MS-70CDR firmware** | **Works.** |
+| **MS-50G / MS-60B** | Native MS-50G / MS-60B firmware | **Does not work.** |
+| **G1on / B1on family** | Native firmware | **Does not work.** The author reports no harm to the pedal. |
 
-Compatibility information reflects the author's hardware report. The build uses
+This version requires **MS-70CDR firmware**. Compatibility information reflects
+the author's hardware report, updated **2026-10-21**. The build uses
 the original MS-70CDR **SYSTEM 2.10** profile.
 
 ## Installation

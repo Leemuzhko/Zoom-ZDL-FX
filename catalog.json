@@ -228,8 +228,8 @@
       "project": "games",
       "path": "zdl/pedal-operated/games/LM_DINO",
       "description": {
-        "en": "DINO RUN — a footswitch-controlled dinosaur runner with saved Sound and a per-preset high score. Tested on MS-70CDR. MS-50G/MS-60B may work, but remain untested. Does not work on the G1on/B1on family; the author reports no harm to the pedal.",
-        "ru": "DINO RUN — игра с динозавром, управлением футсвичем, сохраняемым звуком и рекордом пресета. Протестировано на MS-70CDR. На MS-50G/MS-60B запуск возможен, но пока не проверен. На семействе G1on/B1on не работает; по сообщению автора, вреда педали не наносит."
+        "en": "DINO RUN — a footswitch-controlled dinosaur runner with saved Sound and a per-preset high score. Requires MS-70CDR firmware: works on MS-70CDR and on MS-50G/MS-60B running that firmware. Does not work with native MS-50G/MS-60B firmware or on the G1on/B1on family. The author reports no harm to G1on/B1on pedals.",
+        "ru": "DINO RUN — игра с динозавром, управлением футсвичем, сохраняемым звуком и рекордом пресета. Требуется прошивка MS-70CDR: работает на MS-70CDR и на MS-50G/MS-60B с этой прошивкой. С родными прошивками MS-50G/MS-60B и на семействе G1on/B1on не работает. По сообщению автора, вреда педалям G1on/B1on не наносит."
       }
     }
   ]
